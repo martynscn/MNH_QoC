@@ -4,6 +4,7 @@
 
 # Session Data files
 .RData
+*.RData
 
 # Example code in package build process
 *-Ex.R
@@ -36,3 +37,4 @@ vignettes/*.pdf
 rsconnect/
 
 *.yml
+/Environments

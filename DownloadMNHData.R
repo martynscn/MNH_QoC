@@ -43,74 +43,7 @@ names(s_csv) <- s_clean_names
 write.csv(x = p_csv, file = "p_csv.csv", row.names = FALSE)
 write.csv(x = s_csv, file = "s_csv.csv", row.names = FALSE)
 
-p_csv_import <- read.csv(file = "p_csv.csv", row.names = NULL, as.is = TRUE)
-s_csv_import <- read.csv(file = "s_csv.csv", row.names = NULL, as.is = TRUE)
 
-
-sec_metadata_import <- read.csv(file = "dashboard/data/indDefndf_Sec.csv", as.is = TRUE)
-prim_metadata_import <- read.csv(file = "dashboard/data/prim_metadata_import.csv", as.is = TRUE)
-
-OrgUnitsExport <- read.csv("dashboard/data/MNH_OrgUnitsExport.csv", stringsAsFactors = TRUE)
-
-primDataTemp1 <- left_join(x = p_csv_import, y = OrgUnitsExport[,c("FacilityName","FacilityLabel")], by = c("name_of_facility" = "FacilityName"))
-primDataTemp2 <- left_join(x = primDataTemp1, y = OrgUnitsExport[,c("StateName","StateLabel")], by = c("state" = "StateName"))
-primDataTemp3 <- left_join(x = primDataTemp2, y = OrgUnitsExport[,c("LGAName","LGALabel")], by = c("local_government_area_lga" = "LGAName"))
-primDataTemp4 <- left_join(x = primDataTemp3, y = OrgUnitsExport[,c("SenatorialDistName","SenatorialDistLabel")], by = c("senatorial_district" = "SenatorialDistName"))
-
-# primData_org_units_Names <- names(primDataTemp4)[(ncol(primDataTemp4) - 3):ncol(primDataTemp4)]
-# prim_org_units_metadata <- data.frame(Col_Name = primData_org_units_Names, Data_Type = "Factor", Computed.question.name = c("Facility Label", "State Label","LGA Label", "Senatorial District Label"))
-# prim_metadata <- rbind(prim_metadata_import, prim_org_units_metadata)
-# prim_metadata <- prim_metadata_import
-
-primDataTemp5_List <- sapply(X = 1:ncol(primDataTemp4),
-                        FUN = function(j) {
-                          x <- primDataTemp4[,j]
-                          y <- names(primDataTemp4)[j]
-                          column_class <- prim_metadata_import[prim_metadata_import$Col_Name == y,2][1]
-                          if(column_class == "character") {
-                            as.character(x)
-                          } else if(column_class == "logical") {
-                            as.logical.factor(x)
-                          } else if(column_class == "factor") {
-                            as.factor(x)
-                          } else if(column_class == "numeric") {
-                            as.numeric(x)
-                          } else if(column_class == "integer") {
-                            as.integer(x)
-                          } else if(column_class == "Date-time") {
-                            ymd_hms(x, quiet = TRUE)
-                          } else if(column_class == "Image") {
-                            as.character(x)
-                          } else if(column_class == "geo-coordinates") {
-                            as.character(x)
-                          } else if(column_class == "Time") {
-                            hm(x, quiet = TRUE)
-                          } else if(column_class == "Date") {
-                            ymd(x)
-                          } else if(column_class == "CharNum") {
-                            as.numeric(as.character(x))
-                          }
-                        }, simplify = FALSE, USE.NAMES = TRUE)
-
-# ll <- sapply(primDataTemp5_List,length)
-# cols_that_didnot_convert <- names(primDataTemp4)[ll == 0]
-primDataTemp5_df <- as.data.frame(primDataTemp5_List, row.names = NULL,stringsAsFactors = FALSE, col.names = names(primDataTemp4))
-
-primData <- primDataTemp5_df
-prim_Data_Types <- sapply(primData, class, simplify = TRUE, USE.NAMES = FALSE)
-prim_numeric_cols <- prim_metadata_import[prim_Data_Types == "numeric"|prim_Data_Types == "integer",]
-prim_factor_cols <- prim_metadata_import[prim_Data_Types == "factor",]
-prim_logical_cols <- prim_metadata_import[prim_Data_Types == "logical",]
-prim_character_cols <- prim_metadata_import[prim_Data_Types == "character",]
-prim_date_cols <- prim_metadata_import[prim_Data_Types == "Date",]
-prim_period_cols <- prim_metadata_import[prim_Data_Types == "Period",]
-prim_posixct_cols <- prim_metadata_import[prim_Data_Types == "POSIXct",]
-
-
-
-#You can add for date, date-time and time
-
-# logical,character,Date,numeric,integer,factor
 
 
 
