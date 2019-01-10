@@ -108,7 +108,7 @@ secDataTemp5_List <- sapply(X = 1:ncol(secDataTemp4),
 primDataTemp5_df <- as.data.frame(primDataTemp5_List, row.names = NULL,stringsAsFactors = FALSE, col.names = names(primDataTemp4))
 # secDataTemp5_df <- as.data.frame(secDataTemp5_List, row.names = NULL,stringsAsFactors = FALSE, col.names = names(secDataTemp4))
 
-# generating columns from primary data with different data types
+# generating columns from primary data with different data types ----
 primData <- primDataTemp5_df
 prim_Data_Types <- sapply(primData, class, simplify = TRUE, USE.NAMES = FALSE)
 prim_numeric_cols <- prim_metadata_import[prim_Data_Types == "numeric"|prim_Data_Types == "integer",]
@@ -174,23 +174,23 @@ shinyUI(
   dashboardHeader(title = "MNH QoC Dashboard"),
   dashboardSidebar(
     # Primary labels ----
-    selectInput("prim_all_label", "1st primary variable(x-axis)",prim_all_label, prim_all_label[3]),
-    selectInput("prim_numeric_label", "1st primary numeric variable(x-axis)",prim_numeric_label, prim_numeric_label[3]),
-    selectInput("prim_factor_label", "1st primary factor variable(x-axis)",prim_factor_label, prim_factor_label[3]),
-    selectInput("prim_logical_label", "1st primary logical variable(x-axis)",prim_logical_label, prim_logical_label[3]),
-    selectInput("prim_character_label", "1st primary character variable(x-axis)",prim_character_label, prim_character_label[3]),
-    selectInput("prim_date_label", "1st primary date variable(x-axis)",prim_date_label, prim_date_label[3]),
-    selectInput("prim_period_label", "1st primary period variable(x-axis)",prim_period_label, prim_period_label[3]),
-    selectInput("prim_posixct_label", "1st primary posixct variable(x-axis)",prim_posixct_label, prim_posixct_label[3]),
+    fluidRow(column(6, selectInput("prim_all_label", "1st primary variable(x-axis)",prim_all_label, prim_all_label[1])),column(6,selectInput("prim_all_label2", "2nd primary variable(y-axis)",prim_all_label, prim_all_label[2]))),
+    fluidRow(column(6, selectInput("prim_numeric_label", "1st primary numeric variable(x-axis)",prim_numeric_label, prim_numeric_label[1])),column(6,selectInput("prim_numeric_label", "1st primary numeric variable(x-axis)",prim_numeric_label, prim_numeric_label[2]))),
+    fluidRow(column(6, selectInput("prim_factor_label", "1st primary factor variable(x-axis)",prim_factor_label, prim_factor_label[3])),column(6, selectInput("prim_factor_label", "1st primary factor variable(x-axis)",prim_factor_label, prim_factor_label[3]))),
+    fluidRow(column(6, selectInput("prim_logical_label", "1st primary logical variable(x-axis)",prim_logical_label, prim_logical_label[3])),column(6, selectInput("prim_logical_label", "1st primary logical variable(x-axis)",prim_logical_label, prim_logical_label[3]))),
+    fluidRow(column(6, selectInput("prim_character_label", "1st primary character variable(x-axis)",prim_character_label, prim_character_label[3])),column(6, selectInput("prim_character_label", "1st primary character variable(x-axis)",prim_character_label, prim_character_label[3]))),
+    fluidRow(column(6, selectInput("prim_date_label", "1st primary date variable(x-axis)",prim_date_label, prim_date_label[3])),column(6, selectInput("prim_date_label", "1st primary date variable(x-axis)",prim_date_label, prim_date_label[3]))),
+    fluidRow(column(6, selectInput("prim_period_label", "1st primary period variable(x-axis)",prim_period_label, prim_period_label[3])),column(6, selectInput("prim_period_label", "1st primary period variable(x-axis)",prim_period_label, prim_period_label[3]))),
+    fluidRow(column(6, selectInput("prim_posixct_label", "1st primary posixct variable(x-axis)",prim_posixct_label, prim_posixct_label[3])),column(6, selectInput("prim_posixct_label", "1st primary posixct variable(x-axis)",prim_posixct_label, prim_posixct_label[3]))),
     # Secondary labels ----
-    # selectInput("sec_all_label", "1st primary variable(x-axis)",sec_all_label, sec_all_label[3]),
-    # selectInput("sec_numeric_label", "1st primary numeric variable(x-axis)",sec_numeric_label, sec_numeric_label[3]),
-    # selectInput("sec_factor_label", "1st primary factor variable(x-axis)",sec_factor_label, sec_factor_label[3]),
-    # selectInput("sec_logical_label", "1st primary logical variable(x-axis)",sec_logical_label, sec_logical_label[3]),
-    # selectInput("sec_character_label", "1st primary character variable(x-axis)",sec_character_label, sec_character_label[3]),
-    # selectInput("sec_date_label", "1st primary date variable(x-axis)",sec_date_label, sec_date_label[3]),
-    # selectInput("sec_period_label", "1st primary period variable(x-axis)",sec_period_label, sec_period_label[3]),
-    # selectInput("sec_posixct_label", "1st primary posixct variable(x-axis)",sec_posixct_label, sec_posixct_label[3]),
+    # fluidRow(column(6, selectInput("sec_all_label", "1st primary variable(x-axis)",sec_all_label, sec_all_label[3])),column(6, selectInput("sec_all_label", "1st primary variable(x-axis)",sec_all_label, sec_all_label[3]))),
+    # fluidRow(column(6, selectInput("sec_numeric_label", "1st primary numeric variable(x-axis)",sec_numeric_label, sec_numeric_label[3])),column(6, selectInput("sec_numeric_label", "1st primary numeric variable(x-axis)",sec_numeric_label, sec_numeric_label[3]))),
+    # fluidRow(column(6, selectInput("sec_factor_label", "1st primary factor variable(x-axis)",sec_factor_label, sec_factor_label[3])),column(6, selectInput("sec_factor_label", "1st primary factor variable(x-axis)",sec_factor_label, sec_factor_label[3]))),
+    # fluidRow(column(6, selectInput("sec_logical_label", "1st primary logical variable(x-axis)",sec_logical_label, sec_logical_label[3])),column(6, selectInput("sec_logical_label", "1st primary logical variable(x-axis)",sec_logical_label, sec_logical_label[3]))),
+    # fluidRow(column(6, selectInput("sec_character_label", "1st primary character variable(x-axis)",sec_character_label, sec_character_label[3])),column(6, selectInput("sec_character_label", "1st primary character variable(x-axis)",sec_character_label, sec_character_label[3]))),
+    # fluidRow(column(6, selectInput("sec_date_label", "1st primary date variable(x-axis)",sec_date_label, sec_date_label[3])),column(6, selectInput("sec_date_label", "1st primary date variable(x-axis)",sec_date_label, sec_date_label[3]))),
+    # fluidRow(column(6, selectInput("sec_period_label", "1st primary period variable(x-axis)",sec_period_label, sec_period_label[3])),column(6, selectInput("sec_period_label", "1st primary period variable(x-axis)",sec_period_label, sec_period_label[3]))),
+    # fluidRow(column(6, selectInput("sec_posixct_label", "1st primary posixct variable(x-axis)",sec_posixct_label, sec_posixct_label[3])),column(6, selectInput("sec_posixct_label", "1st primary posixct variable(x-axis)",sec_posixct_label, sec_posixct_label[3]))),
     
     # Dashboard side bars ----
     sidebarMenu(
