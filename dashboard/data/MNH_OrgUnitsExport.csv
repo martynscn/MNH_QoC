@@ -1,0 +1,166 @@
+FacilityName,FacilityLabel,StateName,StateLabel,LGAName,LGALabel,SenatorialDistName,SenatorialDistLabel
+Facility156,Argungu Maternal & Child Health Centre,raJpzpLQnrW,Adamawa,yfbthtn1L57,Abakaliki LGA,senDist0001,Cross River - South
+Facility155,Karyo Health Centre,pEoWZoZbpCF,Bauchi,ysnMXYph1Av,Abuja Municipal LGA,senDist0002,Cross River - Central
+Facility157,Tadurga MDG PHC,jRxuvu6DC7D,Cross River,OQ8JpW0wQWa,Afikpo South LGA,senDist0003,Cross River - North
+Facility158,Zuru PHC,VMMDqh8hciO,Ebonyi,iFXAWD5Fldf,Agaie LGA,senDist0004,Ebonyi - South
+keffifac001,"PHC, Angwan Waje",m5coWtaQ3PO,Federal Capital Territory,X5mxGA8GWvF,Ankpa LGA,senDist0005,Ebonyi - Central
+keffifac002,Kofa Pada PHC,EF8K3UQ5QMd,Gombe,kmnVG8nEzI7,Argungu LGA,senDist0006,Ebonyi - North
+keffifac003,PHC Sabo Gari,CvrMUZivEy8,Kaduna,cVEUXoWvD1s,Bade LGA,senDist0007,Kogi - East
+keffifac004,"General Hospital, Keffi",ILAReS3dM7K,Kano,Us99KsbQ6yf,Bebeji LGA,senDist0008,Kogi - Central
+keffifac005,Gauta HC,giZFuab5fnH,Katsina,R9VOEaqdfVp,Birnin Kebbi LGA,senDist0009,Kogi - North
+keffifac006,Kasuwa PHC,wiymPNTFmjN,Kebbi,lbKctxMjB1y,Bwari LGA,senDist0010,Adamawa - Central
+keffifac007,Ruga PHC,IgBe3l8Bbiw,Kogi,TFh3ru4Qwfq,Calabar Municipal LGA,senDist0011,Adamawa - North
+Facility029,Aku PHC,nasarawasta,Nasarawa,OzTZyvlPi4A,Dandume LGA,senDist0012,Adamawa - South
+Facility074,Aminu Kano Teaching Hospital (AKTH),LRpTprAJ45S,Niger,ShJ4suXjWBr,Daura LGA,senDist0013,Bauchi - Central
+Facility057,Argungu Gen. Hosp,b6hClNZ7YiV,Sokoto,UdAQPIjUBig,Fufore LGA,senDist0014,Bauchi - South
+Facility044,ATBUTH Bauchi (Abubakar Tafawa Teaching Hospital),E8jI6J34xde,Yobe,A2tPI63ercB,Funakaye LGA,senDist0015,Bauchi - North
+Facility094,"Barau Dikko Teaching Hospital, Kaduna",,,AqQvfUrZ0YY,Gabasawa LGA,senDist0016,Kebbi - Central
+Facility076,Bebeji General Hospital,,,wY16BffuKzM,Geidam LGA,senDist0017,Kebbi - South
+Facility136,Bwari General Hospital,,,YPaNtb9a9Me,Goronyo LGA,senDist0018,Kebbi - North
+Facility006,CHC Ikom,,,w67llfeCTt2,Gurara LGA,senDist0019,Kano - Central
+Facility144,Dabi-bako PHC,,,EmuZxUdR17a,Gwandu LGA,senDist0020,Kano - South
+Facility059,Dalijan Dispensary,,,fw1V3li60wm,Ikom LGA,senDist0021,Kano - North
+Facility060,Danko PHC,,,w1i5bkvDj9e,Ikwo LGA,senDist0022,Niger - East
+Facility020,EKOLI Health centre,,,KF68EYo0zEo,Jaba LGA,senDist0023,Niger - South
+Facility022,Elugwu Ettam PHC,,,W62lKdLHlOp,Kaduna South LGA,senDist0024,Niger - North
+Facility004,Emmanuel Infirmary (Private),,,ZtTKZq9nL7v,Kaltungo LGA,senDist0025,Kaduna - Central
+Facility024,Ephuenyim Health Centre,,,L0sNaQdClUI,Katagum LGA,senDist0026,Kaduna - North
+Facility091,Eyye PHC,,,wHGGr3SmTox,Katsina LGA,senDist0027,Kaduna - South
+Facility129,Faga Alasa-PHC,,,piuM0IwMDXJ,Kwali LGA,senDist0028,Katsina - Central
+Facility025,"Federal Medical Center, Lokoja",,,keffilga000,Keffi LGA,senDist0029,Katsina - South
+Facility104,"Federal Medical Centre, Katsina",,,m6sOrTNXTNk,Lokoja LGA,senDist0030,Katsina - North
+Facility015,Federal Teaching Hospital ABAKALIKI (FETHA),,,ex3XeJsE9CK,Mariga LGA,senDist0031,Yobe - Central
+Facility064,FMC Birnin Kebbi,,,D4JghRLldVE,Misau LGA,senDist0032,Yobe - South
+Facility035,Fufore Cottage Hospital,,,K1aAbcgrUKV,Mubi South LGA,senDist0033,Yobe - North
+Facility082,Gabasawa Model PHC,,,E1D85SZOs49,Nassarawa LGA,senDist0034,Sokoto - West
+Facility138,Gbagalape PHC center,,,dGbFXlOIjtv,Obudu LGA,senDist0035,Sokoto - East
+Facility034,Geku Beki PHC,,,PCRVGCWkN9D,Ogoja LGA,senDist0036,Sokoto - South
+Facility095,Gen Hosp. Yusuf Dantsoho,,,JtlnGHrBBbb,Okene LGA,senDist0037,Gombe - South
+Facility086,Gen. Hosp. Agaie,,,MHQpIQ6jk5k,Potiskum LGA,senDist0038,Gombe - Central
+Facility087,Gen. Hosp. Bangi,,,RCQoBvz4joc,Shelleng LGA,senDist0039,Gombe - North
+Facility117,Gen. Hosp. Gashua,,,Rt0T86g4qOW,Silame LGA,,
+Facility115,Gen. Hosp. Geidam,,,iLRlW3MVGAK,Tambuwal LGA,,
+Facility116,Gen. Hosp. Potiskum,,,ahQaJn03kLm,Toro LGA,,
+Facility085,Gen. Hosp. Suleja,,,rNx28pSv6L6,Wasagu/Danko LGA,,
+Facility105,General Hospital (Maternity Hospital) Katsina,,,YrJ09MAfA8Z,Yamaltu/Deba LGA,,
+Facility065,Comprehensive Health Centre (UDUTH Annex),,,Xl7zElJT37K,Zaria LGA,,
+Facility047,General Hospital Azare,,,ljTLBmG0Uyv,Zuru LGA,,
+Facility148,General Hospital Bajoga,,,,,,
+Facility002,General Hospital Calabar,,,,,,
+Facility107,General Hospital Daura,,,,,,
+Facility147,General Hospital Deba,,,,,,
+Facility106,General Hospital Funtua,,,,,,
+Facility146,General Hospital Kaltungo,,,,,,
+Facility097,General hospital Kwoi,,,,,,
+Facility045,General Hospital Misau,,,,,,
+Facility009,General Hospital Ogoja,,,,,,
+Facility016,General Hospital Owutu Edda,,,,,,
+Facility046,General Hospital Toro,,,,,,
+Facility077,Gezawa Gen. Hosp,,,,,,
+Facility067,MB General Hospital Zuru,,,,,,
+Facility033,Giriya Basic Health Centre,,,,,,
+Facility145,Gombe Federal Teaching Hospital (FTH),,,,,,
+Facility126,Goronyo General Hospital,,,,,,
+Facility026,Grimard Catholic Hospital,,,,,,
+Facility038,Guerin PHC,,,,,,
+Facility062,Gulma PHC,,,,,,
+Facility050,Gumau PHC,,,,,,
+Facility037,Guyuk General hospital,,,,,,
+Facility079,Gwagwarwa PHC,,,,,,
+Facility080,Gwamai PHC,,,,,,
+Facility055,Gwandu Gen. Hosp.,,,,,,
+Facility058,Gwandu Rural HC,,,,,,
+Facility049,Gwaram PHC,,,,,,
+Facility096,Hajiya Gambo Sawaba Memorial hospital,,,,,,
+Facility005,Holy Family Catholic Hospital Ikom,,,,,,
+Facility078,Hotoro Arewa PHC,,,,,,
+Facility032,Ikuhi Primary Health Centre,,,,,,
+Facility088,Izom Basic Health Care,,,,,,
+Facility084,"Jummai Babangida Aliyu Maternal and Newborn Hospital, Minna",,,,,,
+Facility092,K/Bobi Health Facility,,,,,,
+Facility053,Kafin PHC,,,,,,
+Facility052,Kaji PHC,,,,,,
+Facility139,Karu PHC center,,,,,,
+Facility042,Ketembere HC,,,,,,
+Facility141,Kogo PHC center,,,,,,
+Facility140,Kuchingoro  PHC center,,,,,,
+Facility090,Kutirko PHC,,,,,,
+Facility143,Kwali central PHC,,,,,,
+Facility137,Kwali General Hospital,,,,,,
+Facility063,Lailaba Health Facility,,,,,,
+Facility089,Lefu PHC,,,,,,
+Facility093,Mariga Basic Health Clinic,,,,,,
+Facility023,MCH azuiyioku,,,,,,
+Facility008,Melrose Hospital,,,,,,
+Facility018,Mile Four Mission Hospital,,,,,,
+Facility048,Misau Town Maternity,,,,,,
+Facility152,Model PHC Bogo,,,,,,
+Facility036,Mubi General hospital,,,,,,
+Facility041,Mugulbu PHC,,,,,,
+Facility075,Muhd Abdullahi Wase Specialist Hospital,,,,,,
+Facility040,Nassarawo Health Clinic,,,,,,
+Facility134,"NAUTH Gwagwalada, Abuja",,,,,,
+Facility019,NGUZU Health centre,,,,,,
+Facility135,NYANYA GENERAL HOSPITAL,,,,,,
+Facility043,NYSC PHCC,,,,,,
+Facility031,Obeiba PHC,,,,,,
+Facility014,Obudu Clinic,,,,,,
+Facility021,Odeligbo PHC,,,,,,
+Facility030,Ogodo PHC (Ankpa),,,,,,
+Facility027,Okene Zonal Hospital,,,,,,
+Facility039,Pariya PHC,,,,,,
+Facility071,PHC Ambursa,,,,,,
+Facility102,PHC Ankung “A,,,,,,
+Facility101,PHC Baban dodo,,,,,,
+Facility153,PHC Bajoga town,,,,,,
+Facility112,PHC Baraje,,,,,,
+Facility122,PHC Dagona,,,,,,
+Facility110,PHC Dandume,,,,,,
+Facility109,PHC Dankama,,,,,,
+Facility120,PHC Dogon Zare,,,,,,
+Facility003,PHC Ekpo Abasi,,,,,,
+Facility011,PHC Ekumtak,,,,,,
+Facility007,PHC Emangabe ,,,,,,
+Facility068,PHC Felende,,,,,,
+Facility133,PHC Gande,,,,,,
+Facility118,PHC Geidam Low Cost,,,,,,
+Facility069,PHC Gulma,,,,,,
+Facility113,PHC Hindatu,,,,,,
+Facility010,PHC Ibil,,,,,,
+Facility128,PHC Jabo,,,,,,
+Facility149,PHC Kalaring,,,,,,
+Facility132,PHC Katami,,,,,,
+Facility119,PHC Kelluri,,,,,,
+Facility151,PHC Kuri,,,,,,
+Facility103,PHC Kwoi,,,,,,
+Facility123,PHC Lawan Musa,,,,,,
+Facility111,PHC Mahuta,,,,,,
+Facility070,PHC Makara,,,,,,
+Facility098,PHC Makera,,,,,,
+Facility013,PHC Obudu,,,,,,
+Facility131,PHC Rimawa,,,,,,
+Facility154,PHC Sangami.,,,,,,
+Facility072,PHC Sendi,,,,,,
+Facility130,PHC Shinaka,,,,,,
+Facility100,PHC T/wada,,,,,,
+Facility099,PHC Television,,,,,,
+Facility121,PHC Tudun Wada,,,,,,
+Facility150,PHC Ture Balam,,,,,,
+Facility108,PHC Yandaki,,,,,,
+Facility073,PHC Yauri,,,,,,
+Facility081,Rahama PHC,,,,,,
+Facility061,Ribah  Maternal & Child Health Clinic,,,,,,
+Facility056,Ribah Gen. Hosp,,,,,,
+Facility051,Rishi PHC,,,,,,
+Facility017,Rural Improvement Hospital (RIMH),,,,,,
+Facility012,Sacred Heart Catholic Hospital Obudu,,,,,,
+Facility127,Silame General Hospital,,,,,,
+Facility066,Sir Yahaya Memorial General Hospital,,,,,,
+Facility054,Sir Yahaya Memorial Hospital,,,,,,
+Facility028,St John’s Hospital Kaba,,,,,,
+Facility114,State Specialist Hospital Damaturu,,,,,,
+Facility125,Tambuwal General Hospital,,,,,,
+Facility124,UDUTH Sokoto,,,,,,
+Facility001,University of Calabar Teaching Hospital,,,,,,
+Facility142,Ushafa PHC center,,,,,,
+Facility083,Zakirai PHC,,,,,,

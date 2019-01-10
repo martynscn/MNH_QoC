@@ -1,0 +1,521 @@
+Col_Name,Data_Type,Computed question name
+id,Factor,id
+tags,character,tags
+uuid,character,uuid
+email,Factor,email
+notes,character,notes
+edited,logical,edited
+status,Factor,status
+version,Factor,version
+username,Factor,username
+duration,CharNum,duration
+xformid,Factor,xformid
+end00000000,Date-time,end00000000
+phonenumber,Factor,phonenumber
+start000000,Date-time,start000000
+attachments,Image,attachments
+geolocation,geo-coordinates,geolocation
+mediacount,Numeric,mediacount
+totalmedia,Numeric,totalmedia
+uuid.1,character,uuid.1
+intendtime,Time,intendtime
+timestarted,Time,timestarted
+submittedby,character,submittedby
+reviewstatus,Factor,reviewstatus
+instanceid,character,instanceid
+submissiontime,Date-time,submissiontime
+xformidstring,Factor,xformidstring
+instancename,character,instancename
+bamboodatasetid,character,bamboodatasetid
+submissionstatus,Factor,submissionstatus
+mediaallreceived,logical,mediaallreceived
+interviewstarttime,Time,0007. INTERVIEW START TIME
+obtainedthesignedinformedco,Factor,0008. OBTAINED THE SIGNED INFORMED CONSENT?
+date,Date,0003. Date
+date.1,Date,date.1
+interviewersname,character,0004. Interviewer’s Name
+nameofparticipant,character,0001. Name of participant
+signatureofinterviewer,Image,0005. Signature of Interviewer
+signatureofparticipant,Image,0002. Signature of Participant
+indicatorname,character,indicatorname
+indicatornamecount,numeric,indicatornamecount
+totnumberofindicators,numeric,totnumberofindicators
+corfaccateg,Factor,1011. CHECK THAT THE FACILITY IS CORRECTLY CATEGORIZED
+manauthorit,Factor,1012. Which of the responses best describes the managing authority for this facility?
+totalnumberofindicators,numeric,totalnumberofindicators
+statusofindicatorsonnhmis,character,statusofindicatorsonnhmis
+state,Factor,1001. State
+selectallindicatorsapplicabl,Factor,5002. Select all indicators applicable
+selecttheapplicableindicator,Factor,5010. Select the applicable indicator(s)
+statusofindicatorsonnhmiscount,Factor,statusofindicatorsonnhmiscount
+others,character,3105. Please specify other activities that are part of the linkages the facility has with  community health workers
+facmanquali,Factor,1010b. What is your qualification?
+facmanquest,Factor,1010a. Are you the officer in charge of this facility?
+bpleasespecify,character,1005b. Please Specify
+nameoffacility,Factor,1004. Name of facility
+date43,Date,4317. DATE
+bhoursofservice,Factor,1009b. Hours of Service
+senatorialdistrict,Factor,1002. Senatorial District
+resultcodes,Factor,2702. RESULT CODES
+othsrcsfund,character,Pls specify other sources funding at least one casual staff
+pleasespecify,character,2601b. Please specify
+localgovernmentarealga,Factor,1003. Local Government Area (LGA)
+interviewend43,Time,4310. INTERVIEW END TIME
+aservicelevelsavailable,Factor,1009a. Service levels available
+recordfacilitysettlement,Factor,1008. Record facility settlement
+interviewendtime,Time,2701. INTERVIEW END TIME
+nameofsupervisor,character,2707. NAME OF SUPERVISOR
+dateintobservations,Date,DATE
+howmanybedsarethere,Numeric,1501b. How many beds are there?
+anyothercomments43,character,4314. ANY OTHER COMMENTS
+nameofsupervisor43,character,4316. NAME OF SUPERVISOR
+aisthisfacilityknownbyany,Factor,1005a. Is this facility known by any other names?
+geocoordinatesofthefacility,geo-coordinates,0002. Geo Coordinates of the facility
+physicallocationaddressoffa,character,1006. Physical location/address of facility
+takeapictureofthefrontof,Image,"0001. Take a picture of the facility, visibly capturing the signpost where available"
+disposalare,Factor,2402b. ASK TO SEE THE PLACE USED BY THE FACILITY FOR DISPOSAL OF SHARPS WASTE AND INDICATE THE CONDITION OBSERVED.
+guidonwasmg,Factor,2408. Does this facility have any guidelines on health care waste management?
+medwadispla,Factor,2404b. ASK TO SEE THE PLACE USED FOR DISPOSAL OF MEDICAL WASTE BY THE FACILITY AND INDICATE THE CONDITION OBSERVED
+medwastedis,Factor,2403b. How does the facility finally dispose off medical waste other than sharp boxes?
+optopenburn,Factor,i. Options for OPEN BURNING
+optopnbunme,Factor,i. Options for OPEN BURNING (Medical Waste)
+wastedispme,Factor,"2401. How does this facility finally dispose of sharps waste (e.g., filled sharps boxes)?"
+wastetraini,Factor,2409. Have you or any provider(s) received formal training in health care waste management practices in the past two years?
+resultcodeslastvisit,Factor,4311. RESULT CODES (LAST VISIT)
+supervisorsobservations,character,2706. SUPERVISOR'S OBSERVATIONS:
+interviewstarttimedelivs,Time,4104. INTERVIEW START TIME
+supervisorsobservations43,character,4315. SUPERVISOR'S OBSERVATIONS
+doesthisfacilityhaveambul,Factor,2602a. Does this facility have a functional ambulance or other vehicle for emergency transportation for clients that is stationed at this facility or operates from this facility?
+commentsabouttherespondent,character,2703. COMMENTS ABOUT THE RESPONDENT:
+aredeliveryandnewborncares,Factor,4105. Are delivery and newborn care services offered in the outpatient or inpatient service area?
+doesthisfacilityofferdelive,Factor,4102. Does this facility offer delivery (including normal and/or assisted delivery)
+commentsonspecificques43,character,4313. COMMENTS ON SPECIFIC QUESTIONS
+excludinganydeliverybedsare,Factor,"1501a. Excluding any delivery beds, are there overnight/inpatient beds in this facility, both for adults and children?"
+howmanydedicatedmartenitybe,Numeric,1502b. How many dedicated martenity beds are there?
+oftheovernightinpatientbeds,Factor,"1502a. Of the overnight/inpatient beds in this facility, are there dedicated maternity beds?"
+commentsonspecificquestions,character,2704. COMMENTS ON SPECIFIC QUESTIONS:
+commentsabouttherespond43,character,4312. COMMENTS ABOUT THE RESPONDENT
+didthefacilityreceiveasupe,Factor,1301. Did the facility receive a supervision visit from the LGA-PHC in the last fiscal year?
+doesthisfacilityreceiveany,Factor,"1306. Does this facility receive any external supervision, apart from the LGA?"
+howmanytimesinthelast3mo,Factor,1309. How many times in the last 3 months did this facility receive any supportive supervision from outside the facility?
+isthereanydocumentationfrom,Factor,1311. Is there any documentation from supervisory visits during the past 3 months?
+pleasetellmeifthisfacility,Factor,1307a. Please tell me if this facility has received external supportive supervision from the indicated sources.
+whenwasthelasttimeasuperv,Factor,"1308. When was the last time a supervisor from outside this facility, either LGA, state, zonal, or federal, came here on a supportive supervisory visit?"
+doesthisfacilityroutinelyca,Factor,1401. Does this facility routinely carry out quality assurance activities for any service areas? (e.g SOP)
+doesthisfacilitysystematical,Factor,"1403. Does this facility systematically practice any other type of continuous quality improvement?  This refers to a systematic process of identifying and addressing, such as COPE¹?"
+howmanycasualstaffarefunde,Numeric,How many casual staff are funded by ${oth_srcs_fund}
+btakeapictureoftheambulan,Image,2602b. Take a picture of the ambulance
+doesthisfacilityhaveaccess,Factor,2605. Does this facility have access to an ambulance or other vehicle for emergency transport for clients that is stationed at another facility or that operates from another facility in near proximity?
+isfuelavailabletodayforthe,Factor,2603. Is fuel available today for the ambulance or other emergency transportation vehicle?
+isthereadriveravailableons,Factor,2604. Is there a driver available onsite or on call today?
+howoftendotheymeet,Factor,1203. How often do they meet?
+lga,Numeric,i. LGA
+lga2,Numeric,i. LGA
+donor2,Factor,iv. Donor
+state2,Factor,ii. STATE
+state.1,Factor,state.1
+duringotherseasonsisthewat,Factor,"2301d. During other seasons is the water more available, less available, or not available?"
+isthereaseasonaldifference,Factor,2301c. Is there a seasonal difference in water availability?
+iswateravailablefromthisso,Factor,2302. Is water available from this source on facility premises?
+whatistheaveragewalkingtim,Numeric,2301a. What is the average walking time to and from the main source of water?
+whatisthemostcommonlyused,Factor,2301. What is the most commonly used source of water for the general facility use at this time?
+facility,Numeric,iv. FACILITY
+facility2,Numeric,iv. FACILITY
+ngodonor,Numeric,iii. NGO/DONOR
+anyother,Factor,vii. Any other?
+ngodonor2,Numeric,iii. NGO/DONOR
+ctakeapictureofthedisposa,Image,2404c. Take a picture of the disposal site
+takeapictureofthedisposal,Image,2402c. Take a picture of the disposal site
+arethereanywrittennotesor,Factor,1209. Are there any written notes or minutes from the most recent management committee meeting?
+atthefacilitylevelisthere,Factor,"1211a. At the facility level, is there a routine process for reviewing data on facility services, outcomes, or patient feedback"
+didanymemberofthiswdcvdc,Factor,1204a. Did any member of this WDC/VDC/CDC/VHC visit the PHC in during the prior 3 months?
+dothemembersofthewdcvdcc,Factor,1202. Do the members of the WDC/VDC/CDC/VHC committee meet regularly?
+doesthisfacilityhaveacore,Factor,1206. Does this facility have a core management team or a management committee that is responsible for oversight of the day-to-day functioning of the facility?
+howmanyvisitsweremadedurin,Numeric,1204b. How many visits were made during the prior 3 months?
+isthereawarddevelopmentcom,Factor,1201. Is there a Ward Development Committee (WDC)/Village Development Committee (VDC)/Community Development Committee (CDC)/ VHC (Village Head Committee) in place for this facility?
+isthereanyroutinesystemin,Factor,1207. Is there any routine system in place for including community representation for some aspects of the management team or committee work?
+whenwasthemostrecentmanage,Factor,1208. When was the most recent management team or management committee meeting?
+statelevel2,Factor,ii. State Level
+dckit,Factor,14. D&C Kit
+itemrelatedtofacilitymanage,Factor,"ii. Item related to facility management such as  finance, staff, resources, infrastructure, HMIS data areports, management records, general facility activities) are recorded"
+itemrelatedtospecificservic,Factor,"iii. Item related to specific service(s) or topics relevant to quality of care (resources specific to a service, observation of provider practice, discussion of case management, adherence to guidelines, indicators for quality)"
+supervisorychecklistwasleft,Factor,i. Supervisory checklist was left with facility
+nummemstaff,numeric,nummemstaff
+speculum,Factor,15. Speculum
+doesyourfacilityhaveelectri,Factor,"2201. Does your facility have electricity from any source such as electricity grid, generator, solar, or other, including for stand-alone devices such as those used to maintain the EPI cold chain?"
+inthelast7dayswaselectric,Factor,"2204. In the last 7 days, was electricity available at all times from the main or any backup source when the facility was open for services?"
+otherthanthemainorprimary,Factor,"2203a. Other than the main or primary source, does the facility have a secondary or backup source of electricity?"
+whatisthefacilitysmainsou,Factor,2202. What is the facility’s main source of electricity?
+whatisthesecondarysourceof,Factor,2203b. What is the secondary source of electricity?
+useachecklist,Factor,i. Use a checklist?
+nationallevel2,Factor,i. National level
+cordclamp,Factor,7. Cord clamp
+doesthisfacilityhaveafunct,Factor,2102. Does this facility have a functioning computer?
+doesthisfacilityhaveameans,Factor,2101. Does this facility have a means for communicating outside the facility such as a functional phone or radio that are supported by the facility?
+doesthisfacilityprovidepnc,Factor,3301. Does this facility provide PNC as an outpatient service?
+thermometer,Factor,26. Thermometer
+didtheyleaveacopyofthech,Factor,"1305. Did they leave a copy of the checklist or any written comments related to their supervision observations?
+"
+duringthemostrecentvisitby,Factor,"1304. During the most recent visit by the LGA-PHC, did they use a checklist?"
+howoftendidthelgaphcsuper,Factor,1302. How often did the LGA-PHC supervisor visit this facility in the last fiscal year?
+whenwasthemostrecentvisit,Factor,1303. When was the most recent visit by the LGA-PHC?
+financialrecords,Factor,ix. Financial records
+deliverybed,Factor,2. Delivery bed
+deliverypack,Factor,6. Delivery pack
+needleholder,Factor,11. Needle holder
+healthprofessional,Factor,healthprofessional
+communitysensitization,Factor,3104. Community sensitization
+arehealthymothersroutinelym,Factor,4213. Are healthy mothers routinely monitored postpartum for symptoms of possible risk?
+arehealthynewbornsroutinely,Factor,4211. Are healthy newborns routinely monitored postpartum for symptoms of possible risk?
+arethereanyguidelinesorjob,Factor,4215. Are there any guidelines or job aids in this service site for postpartum care?
+doesthefacilitymaintainrec2,Factor,1107. Does the facility maintain records of patients who are referred out?
+doesthefacilitymaintainreco,Factor,1105. Does the facility maintain records of patients who are received through referral from other facilities?
+doesthefacilityuseaprepri,Factor,1106. Does the facility use a pre-printed referral form when patients are referred elsewhere?
+hasanyofthestaffbeentrain,Factor,1104. Has any of the staff been trained on referral system?
+usingthemostcommonmeansfor,Factor,"1108. Using the most common means for transportation, how long does it take for a referred patient to go from your facility to the most commonly used next level?"
+doesthisfacilityprovideany,Factor,"3401. Does this facility provide any post-abortion care such as vacuum aspiration or D&C services to remove retained products of conception, or treatment of infections?"
+doesthisfacilityhavearouti,Factor,3206. Does this facility have a routine system for follow-up for HIV positive pregnant women who are referred for ARV treatment?
+doesthisfacilityofferantena,Factor,3201. Does this facility offer antenatal care (ANC) services?
+vacuumaspirator,Factor,13. Vacuum aspirator
+atanytimeduringthepast3m,Factor,4135c. At any time during the past 3 months has the newborn bag and mask for term babies been unavailable for this unit for any reason?
+doesthisuniteverprovideoxy,Factor,4135d. Does this unit ever provide oxygen to patients?
+takeapictureoftheunfilled,Image,4134c. Take a picture of the unfilled partograph
+selfarrangedbypatient,Factor,vi. Self arranged by patient
+haveyouoranyprovtrain,Factor,"4115b. Have you or any provider(s) of delivery service received any training in any other aspect of delivery or essential newborn care, or lifesaving skills in the last two years ?"
+autodisablesyringes,Factor,ix. Auto-disable syringes
+episiotomyscissors,Factor,8. Episiotomy scissors
+fetalstethoscope2,Factor,17. Fetal stethoscope
+unfilledpartograph,Factor,1. Unfilled partograph
+healthprofessionalcount,numeric,healthprofessionalcount
+communityengagementmodule3,Factor,3103. Community engagement
+alcoholbasedhandrub,Factor,iii. Alcohol based hand rub
+dckitfunc,Factor,8. D&C Kit
+speculumfunc,Factor,9. Speculum
+hasthisfacilityeverseencas,Factor,"4226. Has this facility ever seen cases of severely ill newborns, with possible severe bacteria infection or sepsis among inpatients?"
+iskmckangaroomothercarefor,Factor,4222. IS KMC (Kangaroo mother care) for premature/very small babies) routinely used in this facility?
+arematernaldeathreviewscarr,Factor,4232. Are maternal death reviews carried out on a routine basis?
+areneonataldeathreviewscarr,Factor,4233. Are neonatal death reviews carried out on a routine basis?
+areperinataldeathreviewscar,Factor,4234. Are perinatal death reviews carried out on a routine basis?
+isadeliveryregistermaintain,Factor,"4235. Is a delivery register maintained where complications, maternal, and birth outcomes are recorded?"
+doesthisfacilityhaveaspeci,Factor,1101. Does this facility have a specified catchment area—that is a defined geographic area for which the facility has direct responsibility for serving?
+howmanypeopleliveinthecat,Numeric,1102b. How many people live in the catchment area for this facility?
+istherearecordofpopulation,Factor,1102a. Is there a record of population data for the catchment area?
+whatisthebasisforthecatch,Factor,1103. What is the basis for the catchment population number?
+ambulanceavailableoncall,Factor,ii. Ambulance available on call
+ambulanceownedbyfacility,Factor,i. Ambulance owned by facility
+doesthisfacilityhaveanyfor,Factor,3101. Does this facility have any formal systems for linking with community based volunteers? (CORPs/CHIPS)
+handwashingliquidsoap,Factor,ii. Hand-washing liquid soap
+doesthisfacilitystockanydr,Factor,4139. Does this facility stock any drugs for obstetric care and delivery services in this service site?
+istheoxytocinstoredincold,Factor,4141. Is the oxytocin stored in cold storage?
+communityengagement,Factor,x. Community engagement
+manualvacuumextractor,Factor,12. Manual vacuum extractor
+suctionbulbsingleuse,Factor,24. Suction bulb (single use)
+wrapfordryingnewborn,Factor,18. Wrap for drying newborn
+cordclampfunc,Factor,2. Cord clamp
+improvedwatersupply,Factor,vii. Improved water supply
+officialvehiclenotanambul,Factor,iv. Official vehicle (not an ambulance) available on call
+btakeapictureofthematerni,Image,4113b. Take a picture of the maternity delivery room
+doesthefacilityprovide24ho,Factor,4106. Does the facility provide 24-hour coverage for delivery services?
+doesthisfacilityhaveadeliv,Factor,4113a. Does this facility have a maternity delivery room (second stage room)?
+doesthisfacilityhaveamater,Factor,4112. Does this facility have a maternity waiting center (first stage room) where women can stay prior to giving birth1
+duringnightsandholidaysist,Factor,4111. During nights and holidays is there always a delivery provider who has been trained in newborn resuscitation using a bag and mask?
+duringnightsandholidayswhat,Factor,"4110. During nights and holidays, what is the lowest level of provider who ever conducts deliveries?"
+duringthedayistherealways,Factor,4109. During the day is there always a delivery provider who has been trained in newborn resuscitation using a bag and mask?
+duringthedaywhatisthelowe,Factor,"4108. During the day, what is the lowest level of provider who ever conducts deliveries?"
+isapersonskilledinconducti,Factor,"4107. Is a person skilled in conducting deliveries present at the facility or on-Call in near proximity 24 hours a day, including weekends, to provide delivery care?"
+hastherebeenadeliveryfora,Factor,4129. Has there been a delivery for an HIV positive woman during the past 3 months?
+isthereelectricityinthisse,Factor,4132. Is there electricity in this service area that is functional now?
+takeapictureofthewaterrec,Image,4131b. Take a picture of the water receptacle
+staffavailabilityortraining,Factor,vi. Staff availability or training?
+sharpscontainersafetybox,Factor,"vi. Sharps container (""safety box"")"
+dataegcompletenessqualitya,Factor,"x. Data (e.g. completeness, quality, and timely reporting)"
+haveanydiscussionswithanyp,Factor,ii. Have any discussions with any providers of health services?
+managementorserviceproblems,Factor,iv. Management or service problems the facility is encountering?
+medicinestocksrecordsstorage,Factor,"viii. Medicine stocks, records, storage conditions"
+observeoutpatientconsultation,Factor,iii. Observe outpatient consultations?
+servicequalitysuchasguideli,Factor,"v. Service quality such as guidelines and protocols, patient care issues?"
+specialactivitiesthatiscomi,Factor,vii. Special activities that is coming up?
+whichofthefollowingmembers,Factor,1601a. Which of the following members of staff exist in the facility
+asktogotothemainlocation,Factor,2501a. ASK TO GO TO THE MAIN LOCATION WHERE EQUIPMENT IS FINALLY PROCESSED FOR REUSE.
+officialvehiclenotanambulan,Factor,iii. Official vehicle (not an ambulance) owned by facility
+privatevehiclesnotambulance,Factor,v. Private vehicles (not ambulance) available on call
+doesthisfacilityhavepac,Factor,ii. Does this facility have other check-lists for post abortion care services?
+bloodpressureapparatus2,Factor,16. Blood pressure apparatus
+needleholderfunc,Factor,5. Needle holder
+incubatormaybeinnursery,Factor,20. Incubator (MAY BE IN NURSERY)
+hivtesting,Factor,vi. HIV testing
+genotype03,Factor,vi. Genotype 03
+hivtest07,Factor,vii. HIV test 07
+pcvtest01,Factor,i. PCV test 01
+suturematerialswithneedle,Factor,10. Suture materials with needle
+improvedsecurityfacility,Factor,vi. Improved security (facility)
+cleanrunningwaterpipedbucke,Factor,"i. Clean running water (piped, bucket with tap, or pour pitcher)"
+disposablesyringeswithdispos,Factor,viii. Disposable syringes with disposable needles
+environmentaldisinfectanteg,Factor,"vii. Environmental disinfectant (e.g., chlorine, alcohol)"
+wastebinisclearlymarkedfor,Factor,"v. Waste bin is clearly marked, for example, by label or colour, for infectious non-sharp waste"
+wastereceptaclebinwithlida,Factor,iv. Waste receptacle bin with lid and plastic bin liner
+vacuumaspiratorfunc,Factor,7. Vacuum aspirator
+providednewinfrastructure,Factor,xi. Provided new infrastructure
+urinalysis08,Factor,viii. Urinalysis 08
+arethereanypostabortioncar,Factor,i. Are there any post abortion care guidelines in this service area?
+doesthisfacilityhaveotherj,Factor,iii. Does this facility have other job-aids for post abortion care services
+fetalstethoscopefunc,Factor,11. Fetal stethoscope
+measuringtape,Factor,4b. Measuring Tape
+disposablenonsterilelatexgl,Factor,3. Disposable non-sterile latex gloves
+disposablesterilelatexgloves,Factor,4. Disposable sterile latex gloves
+electricormanualsuctionpump,Factor,22. Electric or manual suction pump
+examinationlightflashlightok,Factor,5. Examination light (flashlight ok)
+infantscalewith100gramgrad,Factor,19. Infant scale(with 100 gram gradation)
+newbornbagandmasksize0for,Factor,28. Newborn bag and mask size 0 for resuscitation of pre-term babies
+newbornbagandmasksize1for,Factor,29. Newborn bag and mask size 1 for resuscitation of term babies
+resuscitationtablewithheats,Factor,21. Resuscitation table (with heat source) (for newborn resuscitation)
+scissorsorsurgicalbladetoc,Factor,9. Scissors or surgical blade to cut cord
+selfinflatingbagandmaskfor,Factor,27. Self-inflating bag and mask for resuscitation - adult
+suctionbulbsterilizablemulti,Factor,25. Suction bulb (sterilizable multi-use)
+suctioncatheterforsuctionap,Factor,23. Suction catheter (for suction apparatus) for suctioning newborn
+examinationbed,Factor,4a. Examination bed
+caesareansection,Factor,viii. Caesarean section
+episiotomyscissorsfunc,Factor,3. Episiotomy scissors
+syphilistest06,Factor,iv. Syphilis test 06
+anyancjobaids,Factor,iii. Any ANC job-aids
+discussphcmanagementinformat,Factor,ix. Discussed PHC Management Information System report and took appropriate action
+identifyavailableresourceshu,Factor,xii. Identified available resources  (human and material) within the community and allocated as appropriate to PHC programmes
+mobilizedcommunitytousefaci,Factor,iii. Mobilized community to use facility
+providenecessarysupporttovh,Factor,viii. Provided necessary support to VHW for the provision of health care service
+providedtransportforhomevis,Factor,iv. Provided transport for home visits
+supervisetheimplementationof,Factor,ii. Supervised the implementation of developed work plans
+supervisedandmonitoreddrugr,Factor,v. Supervised and monitored drug revolving funds and quantity of essential medicine/consumables supply
+supportedorhelpedimprovethe,Factor,"i. Supported or helped improve the health facility (e.g. land, supplies, extensions, repairs etc"
+bloodgrouping02,Factor,v. Blood grouping 02
+fetalstethoscope,Factor,2a. Fetal stethoscope
+doesthisfacilitypmcmt,Factor,4127. Does this facility provide any PMTCT services for women who deliver in the facility?
+hepatitisbtest04,Factor,ii. Hepatitis B  test  04
+hepatitisctest05,Factor,iii. Hepatitis C test 05
+anyancchecklists,Factor,ii. Any ANC check-lists
+manualvacuumextractorfunc,Factor,6. Manual vacuum extractor
+ironsupplementation,Factor,i. Iron supplementation
+adultweighingscale,Factor,3a. Adult weighing scale
+infantscalewith100grfunc,Factor,13. Infant scale(with 100 gram gradation)
+isitfunctionalanc2,Factor,2b. Is it functional?
+isitfunctionalanc3,Factor,3b. Is it functional?
+doesthisfacilitycorticos,Factor,4125. Does this facility routinely provide corticosteroids for preterm labour
+examinationlightflashligfun,Factor,1. Examination light (flashlight ok)
+electricormanualsuctionfunc,Factor,16. Electric or manual suction pump
+scissorsorsurgicalbladefunc,Factor,4. Scissors or surgical blade to cut cord
+assistedvaginaldelivery,Factor,iv. Assisted vaginal delivery
+bloodpressureapparatus,Factor,1a. Blood pressure apparatus
+manualremovalofplacenta,Factor,v. Manual removal of placenta
+takeapictureofthebed,Image,5. Take a picture of these items
+doesthisfacilityroutinelypr,Factor,4123. Does this facility routinely provide antibiotics for preterm or prolonged PROM to prevent infection?
+hasthisservicebeenprovided,Factor,4124. Has this service been provided in the past 12 months?
+folicacidsupplementation,Factor,ii. Folic acid supplementation
+areindividualclientchartsca,Factor,3303. Are individual client charts/cards maintained for PNC clients?
+doesthisfacilityhaveotherc,Factor,3304. Does this facility have other check-lists and/or job-aids (including wall charts) for PNC services?
+istherearegisterwherepncc,Factor,3302. Is there a register where PNC client information is recorded?
+tetanustoxoidimmunization,Factor,iv. Tetanus toxoid immunization
+delayedcordclamping,Factor,iv. Delayed cord clamping
+assessmaternalhivstatus,Factor,i. Assess maternal HIV status
+neonatalresuscitationwithbag,Factor,vii. Neonatal resuscitation with bag and mask
+parenteraladministrationofan,Factor,i. Parenteral administration of antibiotics (IV or IM) for mothers for postpartum sepsis?
+parenteraladministrationofma,Factor,iii. Parenteral administration of magnesium sulphate for management of preeclampsia and eclampsia (IV or IM)
+parenteraladministrationofox,Factor,ii. Parenteral administration of oxytocin for treatment of post-partum haemorrhage (IV or IM)
+removalofretainedproductsof,Factor,vi. Removal of retained products of conception
+diagnosisandtreatmentforsex,Factor,viii. Diagnosis and treatment for sexually transmitted infections
+intermittentpreventivetreatme,Factor,iii. Intermittent preventive treatment in pregnancy (IPTp) for malaria
+monitoringforhypertensivedis,Factor,v. Monitoring for hypertensive disorder of pregnancy
+provisionofarvforhivpositi,Factor,vii. Provision of ARV for HIV positive ANC patients
+nationalguidelinesandorienta,Factor,i. National Guidelines and Orientation Package for ANC
+nationalguidelinesfordiagnos,Factor,iv. National Guidelines for Diagnosis and Treatment of Malaria (2015)
+unfilledindividualclientreco,Factor,v. Unfilled individual client record/chart/card
+activemanagementofthirdstag,Factor,"i. Active management of third stage labour (AMTSL) including oxytocin within one minute after delivery, controlled cord traction, and fundal massage after delivery of placenta?"
+administrationofmisoprostoli,Factor,ii. Administration of misoprostol immediately after birth to all women for the prevention of post-partum haemorrhage when oxytocin is not available?
+monitorandmanagelabourusing,Factor,iii. Monitor and manage labour using a partograph
+providearvtonewbornsofinfe,Factor,iv. Provide ARV to newborns of infected mothers for PMTCT
+providehivcounsellingandtes,Factor,ii. Provide HIV counselling and testing services to all pregnant women in labour whose status is not known
+providematernalarvtoinfecte,Factor,iii. Provide maternal ARV to infected mothers for PMTCT
+bandagesinfectiouswastelying,Factor,v. BANDAGES/INFECTIOUS WASTE LYING UNCOVERED
+counterstableschairswipedcl,Factor,ii. COUNTERS/TABLES/CHAIRS: WIPED CLEAN- NO OBVIOUS DUST OR WASTE
+floorsweptnoobviousdirtor,Factor,"i. FLOOR: SWEPT, NO OBVIOUS DIRT OR WASTE"
+needlessharpsoutsidesharpsb,Factor,"iii. NEEDLES, SHARPS OUTSIDE SHARPS BOX"
+sharpsboxoverflowingortorn,Factor,iv. SHARPS BOX OVERFLOWING OR TORN/PIERCED
+werenonsmokingsignsobserved,Factor,viii. WERE NON-SMOKING SIGNS OBSERVED IN THIS UNIT?
+werestaffwearingappropraite,Factor,vi. WERE STAFF WEARING APPROPRAITE UNIFORMS IN THIS UNIT?
+werestaffwearingidbadgesin,Factor,vii. WERE STAFF WEARING ID BADGES IN THIS UNIT?
+immediateskintoskincontact,Factor,iii. Immediate skin to skin contact
+hygieniccordcarecutwithste,Factor,"i. Hygienic cord care (cut with sterile item and apply 4% Chlorhexidine gel to tip and stump, and no application of other substance)"
+initiatebreastfeedingwithin,Factor,v. Initiate breast feeding within 1 hour postpartum and counsel on exclusive breastfeeding
+thermalprotectiondryingbaby,Factor,ii. Thermal protection (drying baby immediately after birth and wrapping)
+anyotherjobaidsforintegrat,Factor,"iv. Any other job aids for Integrated Management of Pregnancy and Childbirth, lifesaving skills, or any other aspects of childbirth and newborn care services?"
+guidelinesforsafebirthpract,Factor,iii. Guidelines for safe birth practices for PMTCT
+nationalguidelinesforintegra,Factor,i. National guidelines for Integrated Management of Pregnancy and Childbirth (IMPAC)/LSS/ELSS/MLSS/ENC Manuals
+othernationalguidelinesfore,Factor,ii. Other national guidelines for essential childbirth care
+postion0000,character,1010c. What is your position/post?
+facmanqualiother,character,facmanqualiother
+anyothercomments,character,2705. ANY OTHER COMMENTS:
+othcontrstfffund,Numeric,vi. How many contract staff are funded by ${other22}
+facilityuniqueidentifiercode,character,1007. Facility unique identifier/code
+duringthemostrecentvisitdi,Factor,"1310d. During the most recent visit, did the supervisor do or discuss or check"
+specifyanyotheradministrativ,character,1310c. Specify any other administrative records
+isthereanydocumentationoft,Factor,"1404. Is there any documentation of the continuous quality improvement activities? e.g QI tools, training manual"
+isthissystemimplementedthro,Factor,1402. Is this system implemented throughout the facility or only in specific services?
+other22,character,v. Specify other source of funding for contract staff
+inthelast2weekshowmanyda,Numeric,"2301b. In the last 2 weeks, how many days was the water supply from this source interrupted for more than two hours at a time?"
+companionofchoice,Factor,viii. Companion of Choice
+doesthisfacilitymonitorany,Factor,1213. Does this facility monitor any indicator for quality or coverage of services?
+basichygieneprovision,Factor,xiv. Basic Hygiene Provision
+basicsanitationavailableto,Factor,xv. Basic Sanitation available to women and families
+immediatepostpartumuteronic,Factor,xi. Immediate postpartum Uteronic for PPH prevention
+institutionalstillbirthrate,Factor,iv. Institutional stillbirth rate (disaggregated by fresh and macerated)
+newbornsbreastfedwithinone,Factor,x. Newborns breastfed within one hour of birth
+predischargecounsellingfor,Factor,vii. Pre-discharge counselling for mother and baby
+predischargematernaldeaths,Factor,i. Pre-discharge Maternal deaths
+whatisthemostcommonprocess,Factor,3202b. What is the most common process for providing services for sexually transmitted infections for ANC clients?
+anygraphicpresentationofdat,Factor,vi. Any graphic presentation of data other than for immunization?
+anygraphicpresentationofimm,Factor,v. Any graphic presentation of immunization data?
+anytablesorreportsthatdata,Factor,iv. Any tables or reports that present data other than for immunization?
+anytablesorreportsthatpres,Factor,iii. Any tables or reports that present immunization data
+informationfromroutinehmisr,Factor,"i. Information from routine HMIS reports (e.g., numbers of patients, numbers by diagnoses, etc.)"
+informationfromspecialreport,Factor,ii. Information from special reports such as quality indicators
+neonataldeathsinhealthfaci,Factor,iii. Neonatal deaths in health facilities by cause
+newbornswithbirthweightdocu,Factor,xii. Newborns with birthweight documented
+obstetriccasefatalityrated,Factor,vi. Obstetric case fatality rate (disaggregated by direct and indirect when possible)
+predischargematernaldeaths2,Factor,ii. Pre-discharge Maternal deaths by cause
+predischargeneonatalmortali,Factor,v. Pre-discharge neonatal mortality rate
+prematurebabiesinitiatingkm,Factor,xiii. Premature babies initiating KMC
+womenwhoexperiencedphysical,Factor,"ix. Women who experienced physical or verbal abuse anytime during labour, childbirth, or postpartum period"
+supplyissues,Factor,vi. Supply issues
+arethereanyjobaidsorguide,Factor,4224. Are there any job aids or guidelines for KMC?
+haskmcbeenprovidedatanyti,Factor,4223. Has KMC been provided at any time during the past 3 months?
+haveyouoranotherproviderre,Factor,4225. Have you or another provider received training in KMC during the past 2 years?
+financeissues,Factor,i. Finance issues
+serviceissues,Factor,iv. Service issues
+staffingissues,Factor,ii. Staffing issues
+jaundice,Factor,iii. Jaundice
+thermometerfunc,Factor,20. Thermometer
+generalmanagement,Factor,iii. General management
+temperature,Factor,ii. Temperature
+patientcareissues,Factor,v. Patient care issues
+facilityperformance,Factor,vii. Facility performance
+fundalstatus,Factor,iii. Fundal status
+feedingstatus,Factor,v. Feeding status
+bloodpressure,Factor,i. Blood pressure
+respiratoryrate,Factor,ii. Respiratory rate
+temperaturenewborn,Factor,i. Temperature
+newbornbagandmasksifunc,Factor,22. Newborn bag and mask size 0 for resuscitation of pre-term babies
+suctionbulbsingleusefunc,Factor,18. Suction bulb (single use)
+umbilicalcordstatus,Factor,iv. Umbilical cord status
+isitfunctionalanc,Factor,1b. Is it functional?
+bloodpressureapparatusfunc,Factor,10. Blood pressure apparatus
+newbornbagandmasksifunc2,Factor,23. Newborn bag and mask size 1 for resuscitation of term babies
+selfinflatingbagandmafunc,Factor,21. Self-inflating bag and mask for resuscitation - adult
+checkpadsforbleeding,Factor,iv. Check pads for bleeding
+resuscitationtablewithhfunc,Factor,15. Resuscitation table (with heat source) (for newborn resuscitation)
+hasthisservicebeenprovcor,Factor,4126. Has this service been provided in the past 12 months?
+feedbackfromartservices,Factor,iv. Feedback from ART services
+anyguidelinesorjobaidsnewb,Factor,i. Any guidelines or job aids for routine monitoring of the newborn
+anyguidelinesorjobaidspost,Factor,iii. Any guidelines or job aids for routine monitoring of the postpartum woman?
+standardrecordswithpreprinte,Factor,"ii. Standard records with preprinted columns for information to be recorded for newborn monitoring such as jaundice, feeding, respiratory rate, and temperature."
+artinformationrecordedonmch,Factor,v. ART information recorded on MCH cards
+referralformsusedwithartse,Factor,iii. Referral forms used with ART services
+tracethroughcorpschipscommu,Factor,"ii. Trace through CORPs/ CHIPS, community volunteer or facility outreach"
+tracethroughphonecallstext,Factor,i. Trace through phone calls/text message
+uniqueidnumberswithinterlin,Factor,vi. Unique ID numbers with interlinked monitoring system for PMTCT and ART services
+lastmonthname,Factor,lastmonthname
+last2monthname,Factor,last2monthname
+last3monthname,Factor,last3monthname
+lastmonthlabel,Factor,lastmonthlabel
+last2monthlabel,Factor,last2monthlabel
+last3monthlabel,Factor,last3monthlabel
+optremoffsi,Factor,i. Options for REMOVE OFFSITE
+isthereaccesstoemailorint,Factor,2103. Is there access to email or internet within the facility today?
+specifylocation,character,2501b. SPECIFY LOCATION
+arethereanyjobaidssepsis,Factor,4228. Are there any job aids or guidelines related to newborn sepsis
+hasthisfacilityhadanewborn,Factor,4229. Has this facility had a newborn sepsis case within the last 3 months?
+haveyouoranotherprovisepsis,Factor,4230. Have you or another provider received training related to newborn sepsis during the last 2 years?
+haveyouoranyprovidersofd,Factor,4115a. Have you or any provider(s) of delivery service received any training in neonatal resuscitation using the newborn bag and mask in the last two years?
+arethereanyguidelinesonfin,Factor,"2503. Are there any guidelines on final processing, that is sterilizing or high level disinfecting, equipment available in this site today?"
+ivcannula,Factor,6a. IV cannula
+suctionbulbsterilizablefunc,Factor,19. Suction bulb (sterilizable multi-use)
+suctioncatheterforsuctfunc,Factor,17. Suction catheter (for suction apparatus) for suctioning newborn
+skindisinfectant,Factor,9a. Skin disinfectant
+oxytocininjection,Factor,11a. Oxytocin injection
+hydralazineinjection,Factor,2a. Hydralazine injection
+isitfunctional2,Factor,3b. Is it functional?
+intravenousinfusionset,Factor,5a. Intravenous infusion set
+labetalolinj200mgampoule,Factor,3a. Labetalol inj 200mg ampoule)
+anystockoutintheoxytocin,Factor,11b. Any stockout in the last 3 months?
+magnesiumsulphateinjection,Factor,4a. Magnesium sulphate injection
+anystockoutinthelastskin,Factor,9b. Any stockout in the last 3 months?
+chlorhexidinesolutionforum,Factor,10a. 4% chlorhexidine solution for umbilical cord
+anystockoutinthe4chlorhex,Factor,10b. Any stockout in the last 3 months?
+dextroseandwater5d5wintra,Factor,7a. Dextrose and water 5% (D5W) intravenous solution
+antibioticeyeointmenterythro,Factor,1a. Antibiotic eye ointment (erythromycin 0.5% eye ointment) for newborn
+anystockoutinthelast3nacl,Factor,8b. Any stockout in the last 3 months?
+anystockoutinthelast3intr,Factor,5b. Any stockout in the last 3 months?
+anystockoutinthelast3mgs4,Factor,4b. Any stockout in the last 3 months?
+sodiumchloride09nsintravenou,Factor,8a. Sodium Chloride (.09NS) intravenous solution or Ringers Lactate
+immediatereferralwithoutprov,Factor,i. Immediate referral without providing any medicine?
+prescribethefullantibioticr,Factor,iii. Prescribe the full antibiotic regimen and follow up
+provideonedoseinjectableant,Factor,ii. Provide one dose injectable antibiotic and then refer?
+anychecklistsforsafebirth,Factor,v. Any check-lists for safe birth practices for PMTCT
+anyjobaidsforsafebirthpra,Factor,vi. Any job-aids for safe birth practices for PMCTC
+anychemicalsforchemicalhigh,Factor,9. Any chemicals for chemical high-level disinfecting (HLD)
+automatictimermaybeonequip,Factor,7a. Automatic timer (may be on equipment)
+electricautoclavepressureand,Factor,1a. Electric autoclave (pressure and wet heat)
+electricboilerorsteamernop,Factor,4a. Electric boiler or steamer (no pressure)
+heatsourcefornonelectriceq,Factor,6a. Heat source for non-electric equipment
+nonelectricautoclavepressure,Factor,2a. Non-electric autoclave (pressure and wet heat)
+nonelectricpotwithcoverfor,Factor,5. Non-electric pot with cover for boiling/steam
+temperaturesteamtimetstindi,Factor,8. Temperature-Steam-Time (TST) indicator strips or other item that indicates process is complete
+medwastedisother,character,medwastedisother
+wastedispmeother,character,wastedispmeother
+isitfunctional,Factor,1b. Is it functional?
+isitfunctional6,Factor,7b. Is it functional?
+anystockoutinthelast3cann,Factor,6b. Any stockout in the last 3 months?
+anystockoutinthelast3mont,Factor,7b. Any stockout in the last 3 months?
+calcinciner,Factor,calcinciner
+incfuelavai,Factor,2407. Is fuel for the incinerator available today?
+incinerfunc,Factor,2406. Is the incinerator functional today?
+optburninci,Factor,i. Options for BURN INCINERATOR (Medical Waste)
+isitfunctional5,Factor,6b. Is it functional?
+pleasetellmeifthisfacilityother,character,pleasetellmeifthisfacilityother
+other2,Factor,v. ${please_tell_me_if_this_facility_other}
+wrapfordryingnewbornfunc,Factor,12. Wrap for drying newborn
+isitfunctional1,Factor,2b. Is it functional?
+anystockoutinthelast3hydra,Factor,2b. Any stockout in the last 3 months?
+isitfunctional3,Factor,4b. Is it functional?
+electricdryheatsterilizer,Factor,3a. Electric dry heat sterilizer
+incubatormaybeinnurseryfun,Factor,14. Incubator (MAY BE IN NURSERY)
+duringthedaywhatistheloweother,character,duringthedaywhatistheloweother
+duringnightsandholidayswhatother,character,duringnightsandholidayswhatother
+anyroureview,character,1212b. Specify any other information source routinely reviewed?
+othroutinerev,Factor,vii. ${any_rou_review} routinely reviewed
+anystockoutinthelast3antib,Factor,1b. Any stockout in the last 3 months?
+optburninme,Factor,i. Options for BURN INCINERATOR (Medical Waste)
+optremofsme,Factor,i. Options for REMOVE OFFSITE (Medical Waste)
+anystockoutinthelast3labe,Factor,3b. Any stockout in the last 3 months?
+istheconnectingtimeforthe,Factor,2104. Is the connecting time for the internet paid or reimbursed by the management?
+lgalevel2,Factor,iii. LGA Level
+corfaccategother,character,corfaccategother
+whatisthesecondarysourceofother,character,whatisthesecondarysourceofother
+iptpservices,Factor,xxi. IPTp services
+ancx4coverage,Factor,xvii. ANC x 4 coverage
+supervisorychecklistwasleft.1,Factor,supervisorychecklistwasleft.1
+chlorhexidinegelforcord,Factor,xvi. 4% chlorhexidine gel for cord care
+numberofoutpatientvisits,Factor,xx. Number of outpatient visits
+deliverybyskilledprovider,Factor,xix. Delivery by skilled provider
+paediatriccurativeservices,Factor,xxii. Paediatric curative services
+contraceptiveprevalencerate,Factor,xviii. Contraceptive prevalence rate
+pregnantwomentestedforhiv,Factor,xxiii. Pregnant women tested for HIV
+isthereanyoxygencurrentlyi,Factor,4136. Is there any oxygen currently in the unit?
+wasthereanytimeinthelast,Factor,4138. Was there any time in the last 3 months that oxygen was unavailable for this unit for any reason?
+pulseoxymeter,Factor,4a. Pulse oxymeter
+oxygenanalyzer,Factor,3a. Oxygen Analyzer
+isitfunctioning,Factor,1b. Is it functioning?
+isitfunctioningdeliv,Factor,2b. Is it functioning?
+isitfunctioningpulse,Factor,4b. Is it functioning?
+isitfunctioninganalyz,Factor,3b. Is it functioning?
+flowmeterforoxygentherapywi,Factor,1a. Flowmeter for oxygen therapy (with humidification)
+oxygendeliveryapparatuskeyc,Factor,"2a. Oxygen delivery apparatus (key connecting tubes and mask/nasal prongs,)"
+whatisthebasisforthecatchother,character,whatisthebasisforthecatchother
+whatisthemostcommonlyusedother,character,whatisthemostcommonlyusedother

@@ -1,0 +1,965 @@
+Col_Name,Data_Type,Computed.question.name
+start000000,Date-time,start000000
+end00000000,Date-time,end00000000
+phonenumber,factor,phonenumber
+username,factor,username
+email,factor,email
+time_started,Time,time_started
+name_of_participant,factor,Name of participant
+signature_of_participant,Image,Signature of Participant
+date,Date,date
+interviewer_s_name,factor,Interviewer’s Name
+signature_of_interviewer,Image,Signature of Interviewer
+date_,Date,date
+interview_start_time,Time,What is the interview start time
+obtained_the_signed_informed_co,factor,OBTAINED THE SIGNED INFORMED CONSENT?
+take_a_picture_of_the_front_of_,Image,take_a_picture_of_the_front_of_
+geo_coordinates_of_the_facility,numeric,geo_coordinates_of_the_facility
+geo_coordinates_of_the_facility_latitude,numeric,geo_coordinates_of_the_facility_latitude
+geo_coordinates_of_the_facility_longitude,numeric,geo_coordinates_of_the_facility_longitude
+geo_coordinates_of_the_facility_altitude,numeric,geo_coordinates_of_the_facility_altitude
+geo_coordinates_of_the_facility_precision,numeric,geo_coordinates_of_the_facility_precision
+state,factor,state
+senatorial_district,factor,senatorial district
+local_government_area_lga,factor,Local Government Area (LGA)
+name_of_facility,factor,Name of facility
+a_is_this_facility_known_by_any,factor,Is this facility known by any other names?
+b_please_specify,character,Please Specify
+physical_location_address_of_fa,character,Physical location/address of facility
+facility_unique_identifier_code,character,Facility unique identifier/code
+record_facility_settlement,factor,Record facility settlement
+a_service_levels_available,factor,Service levels available
+b_hours_of_service,factor,Hours of Service
+b_hours_of_service_other,factor,b_hours_of_service_other
+FacManQuest,factor, Are you the officer in charge of this facility?
+FacManQuali,factor,What is your position/post?
+FacManQuali_other,factor,What is your qualification?
+Postion0000,character,What is your position/post?
+CorFacCateg,factor,CHECK THAT THE FACILITY IS CORRECTLY CATEGORIZED
+CorFacCateg_other,character,CorFacCateg_other
+ManAuthorit,factor,Which of the responses best describes the managing authority for this facility?
+ManAuthorit_other,character,ManAuthorit_other
+does_this_facility_have_a_speci,factor,Does this facility have a specified catchment area—that is a defined geographic area for which the facility has direct responsibility for serving?
+is_there_a_record_of_population,factor, Is there a record of population data for the catchment area?
+how_many_people_live_in_the_cat,integer,How many people live in the catchment area for this facility?
+what_is_the_basis_for_the_catch,factor,What is the basis for the catchment population number?
+what_is_the_basis_for_the_catch_other,character,what_is_the_basis_for_the_catch_other
+has_any_of_the_staff_been_train,factor,Has any of the staff been trained on referral system?
+does_the_facility_maintain_reco,factor,Does the facility maintain records of patients who are received through referral from other facilities?
+does_the_facility_use_a_pre_pri,factor,Does the facility use a pre-printed referral form when patients are referred elsewhere?
+does_the_facility_maintain_rec2,factor,Does the facility maintain records of patients who are referred out?
+using_the_most_common_means_for,factor,"Using the most common means for transportation, how long does it take for a referred patient to go from your facility to the most commonly used next level?"
+is_there_a_ward_development_com,factor,1201. Is there a Ward Development Committee (WDC)/Village Development Committee (VDC)/Community Development Committee (CDC)/ VHC (Village Head Committee) in place for this facility?
+do_the_members_of_the_wdc_vdc_c,factor,1202. Do the members of the WDC/VDC/CDC/VHC committee meet regularly?
+how_often_do_they_meet,factor,1203. How often do they meet?
+did_any_member_of_this_wdc_vdc_,factor,1204a. Did any member of this WDC/VDC/CDC/VHC visit the PHC in during the prior 3 months?
+how_many_visits_were_made_durin,integer,1204b. How many visits were made during the prior 3 months?
+reserved_name_for_field_list_labels_74,factor,reserved_name_for_field_list_labels_74
+supported_or_helped_improve_the,factor,"i. Supported or helped improve the health facility (e.g. land, supplies, extensions, repairs etc"
+supervise_the_implementation_of,factor,ii. Supervised the implementation of developed work plans
+mobilized_community_to_use_faci,factor,iii. Mobilized community to use facility
+provided_transport_for_home_vis,factor,iv. Provided transport for home visits
+supervised_and_monitored_drug_r,factor,v. Supervised and monitored drug revolving funds and quantity of essential medicine/consumables supply
+improved_security_facility,factor,vi. Improved security (facility)
+improved_water_supply,factor,vii. Improved water supply
+provide_necessary_support_to_vh,factor,viii. Provided necessary support to VHW for the provision of health care service
+discuss_phc_management_informat,factor,ix. Discussed PHC Management Information System report and took appropriate action
+community_engagement,factor,x. Community engagement
+provided_new_infrastructure,factor,xi. Provided new infrastructure
+identify_available_resources_hu,factor,xii. Identified available resources  (human and material) within the community and allocated as appropriate to PHC programmes
+does_this_facility_have_a_core_,factor,1206. Does this facility have a core management team or a management committee that is responsible for oversight of the day-to-day functioning of the facility?
+is_there_any_routine_system_in_,factor,1207. Is there any routine system in place for including community representation for some aspects of the management team or committee work?
+when_was_the_most_recent_manage,factor,1208. When was the most recent management team or management committee meeting?
+are_there_any_written_notes_or_,factor,1209. Are there any written notes or minutes from the most recent management committee meeting?
+reserved_name_for_field_list_labels_92,factor,reserved_name_for_field_list_labels_92
+finance_issues,factor,i. Finance issues
+staffing_issues,factor,ii. Staffing issues
+general_management,factor,iii. General management
+service_issues,factor,iv. Service issues
+patient_care_issues,factor,v. Patient care issues
+supply_issues,factor,vi. Supply issues
+facility_performance,factor,vii. Facility performance
+at_the_facility_level_is_there_,factor,"1211a. At the facility level, is there a routine process for reviewing data on facility services, outcomes, or patient feedback"
+reserved_name_for_field_list_labels_103,factor,reserved_name_for_field_list_labels_103
+information_from_routine_hmis_r,factor,"i. Information from routine HMIS reports (e.g., numbers of patients, numbers by diagnoses, etc.)"
+information_from_special_report,factor,ii. Information from special reports such as quality indicators
+any_tables_or_reports_that_pres,factor,iii. Any tables or reports that present immunization data
+any_tables_or_reports_that_data,factor,iv. Any tables or reports that present data other than for immunization?
+any_graphic_presentation_of_imm,factor,v. Any graphic presentation of immunization data?
+any_graphic_presentation_of_dat,factor,vi. Any graphic presentation of data other than for immunization?
+any_rou_review,character,any_rou_review
+oth_routine_rev,factor,oth_routine_rev
+does_this_facility_monitor_any_,factor,does_this_facility_monitor_any_
+reserved_name_for_field_list_labels_115,factor,reserved_name_for_field_list_labels_115
+pre_discharge_maternal_deaths,factor,i. Pre-discharge Maternal deaths
+pre_discharge_maternal_deaths2,factor,ii. Pre-discharge Maternal deaths by cause
+neonatal_deaths_in_health_faci,factor,iii. Neonatal deaths in health facilities by cause
+institutional_stillbirth_rate,factor,iv. Institutional stillbirth rate (disaggregated by fresh and macerated)
+pre_discharge_neonatal_mortali,factor,v. Pre-discharge neonatal mortality rate
+obstetric_case_fatality_rate_d,factor,vi. Obstetric case fatality rate (disaggregated by direct and indirect when possible)
+pre_discharge_counselling_for,factor,vii. Pre-discharge counselling for mother and baby
+companion_of_choice,factor,viii. Companion of Choice
+women_who_experienced_physical,factor,"ix. Women who experienced physical or verbal abuse anytime during labour, childbirth, or postpartum period"
+newborns_breastfed_within_one,factor,x. Newborns breastfed within one hour of birth
+immediate_postpartum_uteronic,factor,xi. Immediate postpartum Uteronic for PPH prevention
+newborns_with_birthweight_docu,factor,xii. Newborns with birthweight documented
+premature_babies_initiating_km,factor,xiii. Premature babies initiating KMC
+basic_hygiene_provision,factor,xiv. Basic Hygiene Provision
+basic_sanitation_available_to,factor,xv. Basic Sanitation available to women and families
+chlorhexidine_gel_for_cord,factor,xvi. 4% chlorhexidine gel for cord care
+anc_x_4_coverage,factor,xvii. ANC x 4 coverage
+contraceptive_prevalence_rate,factor,xviii. Contraceptive prevalence rate
+delivery_by_skilled_provider,factor,xix. Delivery by skilled provider
+number_of_outpatient_visits,factor,xx. Number of outpatient visits
+iptp_services,factor,xxi. IPTp services
+paediatric_curative_services,factor,xxii. Paediatric curative services
+pregnant_women_tested_for_hiv,factor,xxiii. Pregnant women tested for HIV
+did_the_facility_receive_a_supe,factor,1301. Did the facility receive a supervision visit from the LGA-PHC in the last fiscal year?
+how_often_did_the_lga_phc_super,factor,1302. How often did the LGA-PHC supervisor visit this facility in the last fiscal year?
+when_was_the_most_recent_visit_,factor,1303. When was the most recent visit by the LGA-PHC?
+during_the_most_recent_visit_by,factor,"1304. During the most recent visit by the LGA-PHC, did they use a checklist?"
+did_they_leave_a_copy_of_the_ch,factor,"1305. Did they leave a copy of the checklist or any written comments related to their supervision observations?
+"
+does_this_facility_receive_any_,factor,"1306. Does this facility receive any external supervision, apart from the LGA?"
+national_level,factor,i. National level
+state_level,factor,ii. State Level
+donor,factor,iii. LGA Level
+other,factor,iv. Donor
+please_tell_me_if_this_facility_other,character,please_tell_me_if_this_facility_other
+reserved_name_for_field_list_labels_152,factor,reserved_name_for_field_list_labels_152
+national_level2,factor,national_level2
+state_level2,factor,state_level2
+lga_level2,factor,lga_level2
+donor2,factor,donor2
+other2,factor,other2
+when_was_the_last_time_a_superv,factor,"1308. When was the last time a supervisor from outside this facility, either LGA, state, zonal, or federal, came here on a supportive supervisory visit?"
+how_many_times_in_the_last_3_mo,factor,1309. How many times in the last 3 months did this facility receive any supportive supervision from outside the facility?
+reserved_name_for_field_list_labels_162,factor,reserved_name_for_field_list_labels_162
+use_a_checklist,factor,i. Use a checklist?
+have_any_discussions_with_any_p,factor,ii. Have any discussions with any providers of health services?
+observe_outpatient_consultation,factor,iii. Observe outpatient consultations?
+management_or_service_problems_,factor,iv. Management or service problems the facility is encountering?
+service_quality_such_as_guideli,factor,"v. Service quality such as guidelines and protocols, patient care issues?"
+staff_availability_or_training,factor,vi. Staff availability or training?
+special_activities_that_is_comi,factor,vii. Special activities that is coming up?
+medicine_stocks_records_storage,factor,"viii. Medicine stocks, records, storage conditions"
+financial_records,factor,ix. Financial records
+data_e_g_completeness_quality_a,factor,"x. Data (e.g. completeness, quality, and timely reporting)"
+specify_any_other_administrativ,character,1310c. Specify any other administrative records
+during_the_most_recent_visit_di,factor,"1310d. During the most recent visit, did the supervisor do or discuss or check"
+is_there_any_documentation_from,factor,1311. Is there any documentation from supervisory visits during the past 3 months?
+reserved_name_for_field_list_labels_178,factor,reserved_name_for_field_list_labels_178
+supervisory_checklist_was_left,factor,i. Supervisory checklist was left with facility
+item_related_to_facility_manage,factor,"ii. Item related to facility management such as  finance, staff, resources, infrastructure, HMIS data areports, management records, general facility activities) are recorded"
+item_related_to_specific_servic,factor,"iii. Item related to specific service(s) or topics relevant to quality of care (resources specific to a service, observation of provider practice, discussion of case management, adherence to guidelines, indicators for quality)"
+does_this_facility_routinely_ca,factor,1401. Does this facility routinely carry out quality assurance activities for any service areas? (e.g SOP)
+is_this_system_implemented_thro,factor,1402. Is this system implemented throughout the facility or only in specific services?
+does_this_facility_systematical,factor,"1403. Does this facility systematically practice any other type of continuous quality improvement?  This refers to a systematic process of identifying and addressing, such as COPE¹?"
+is_there_any_documentation_of_t,factor,"1404. Is there any documentation of the continuous quality improvement activities? e.g QI tools, training manual"
+excluding_any_delivery_beds_are,factor,"1501a. Excluding any delivery beds, are there overnight/inpatient beds in this facility, both for adults and children?"
+how_many_beds_are_there,integer,1501b. How many beds are there?
+of_the_overnight_inpatient_beds,factor,"1502a. Of the overnight/inpatient beds in this facility, are there dedicated maternity beds?"
+how_many_dedicated_martenity_be,integer,1502b. How many dedicated martenity beds are there?
+medical_officer,factor,medical_officer
+dental_officer,factor,dental_officer
+specialists_consultants,factor,specialists_consultants
+nurse,factor,nurse
+midwife,factor,midwife
+nurse_midwife,factor,nurse_midwife
+pharmacist,factor,pharmacist
+pharmacist_technician,factor,pharmacist_technician
+medical_laboratory_scientist,factor,medical_laboratory_scientist
+medical_laboratory_technician,factor,medical_laboratory_technician
+community_health_officer,factor,community_health_officer
+community_health_extension_work,factor,community_health_extension_work
+junior_community_health_extensi,factor,junior_community_health_extensi
+other_health_professional_or_te,factor,other_health_professional_or_te
+all_other_non_technical_staff,factor,all_other_non_technical_staff
+num_mem_staff,factor,num_mem_staff
+health_professional_count,factor,health_professional_count
+staff_post,factor,staff_post
+staff_type,factor,staff_type
+total_iteration,factor,total_iteration
+a_official_authorized_allocated,integer,a_official_authorized_allocated
+b_total_positions_vacant_for_mo,integer,b_total_positions_vacant_for_mo
+c_total_staff_assigned_employed,integer,c_total_staff_assigned_employed
+d_total_part_time_from_among_th,integer,d_total_part_time_from_among_th
+e_total_casual_contracted_staff,integer,e_total_casual_contracted_staff
+staff_post.1,factor,staff_post
+staff_type.1,factor,staff_type
+total_iteration.1,factor,total_iteration
+a_official_authorized_allocated.1,integer,a_official_authorized_allocated
+b_total_positions_vacant_for_mo.1,integer,b_total_positions_vacant_for_mo
+c_total_staff_assigned_employed.1,integer,c_total_staff_assigned_employed
+d_total_part_time_from_among_th.1,integer,d_total_part_time_from_among_th
+e_total_casual_contracted_staff.1,integer,e_total_casual_contracted_staff
+staff_post.2,factor,staff_post
+staff_type.2,factor,staff_type
+total_iteration.2,factor,total_iteration
+a_official_authorized_allocated.2,integer,a_official_authorized_allocated
+b_total_positions_vacant_for_mo.2,integer,b_total_positions_vacant_for_mo
+c_total_staff_assigned_employed.2,integer,c_total_staff_assigned_employed
+d_total_part_time_from_among_th.2,integer,d_total_part_time_from_among_th
+e_total_casual_contracted_staff.2,integer,e_total_casual_contracted_staff
+staff_post.3,factor,staff_post
+staff_type.3,factor,staff_type
+total_iteration.3,factor,total_iteration
+a_official_authorized_allocated.3,integer,a_official_authorized_allocated
+b_total_positions_vacant_for_mo.3,integer,b_total_positions_vacant_for_mo
+c_total_staff_assigned_employed.3,integer,c_total_staff_assigned_employed
+d_total_part_time_from_among_th.3,integer,d_total_part_time_from_among_th
+e_total_casual_contracted_staff.3,integer,e_total_casual_contracted_staff
+staff_post.4,factor,staff_post
+staff_type.4,factor,staff_type
+total_iteration.4,factor,total_iteration
+a_official_authorized_allocated.4,integer,a_official_authorized_allocated
+b_total_positions_vacant_for_mo.4,integer,b_total_positions_vacant_for_mo
+c_total_staff_assigned_employed.4,integer,c_total_staff_assigned_employed
+d_total_part_time_from_among_th.4,integer,d_total_part_time_from_among_th
+e_total_casual_contracted_staff.4,integer,e_total_casual_contracted_staff
+staff_post.5,factor,staff_post
+staff_type.5,factor,staff_type
+total_iteration.5,factor,total_iteration
+a_official_authorized_allocated.5,integer,a_official_authorized_allocated
+b_total_positions_vacant_for_mo.5,integer,b_total_positions_vacant_for_mo
+c_total_staff_assigned_employed.5,integer,c_total_staff_assigned_employed
+d_total_part_time_from_among_th.5,integer,d_total_part_time_from_among_th
+e_total_casual_contracted_staff.5,integer,e_total_casual_contracted_staff
+staff_post.6,factor,staff_post
+staff_type.6,factor,staff_type
+total_iteration.6,factor,total_iteration
+a_official_authorized_allocated.6,integer,a_official_authorized_allocated
+b_total_positions_vacant_for_mo.6,integer,b_total_positions_vacant_for_mo
+c_total_staff_assigned_employed.6,integer,c_total_staff_assigned_employed
+d_total_part_time_from_among_th.6,integer,d_total_part_time_from_among_th
+e_total_casual_contracted_staff.6,integer,e_total_casual_contracted_staff
+staff_post.7,factor,staff_post
+staff_type.7,factor,staff_type
+total_iteration.7,factor,total_iteration
+a_official_authorized_allocated.7,integer,a_official_authorized_allocated
+b_total_positions_vacant_for_mo.7,integer,b_total_positions_vacant_for_mo
+c_total_staff_assigned_employed.7,integer,c_total_staff_assigned_employed
+d_total_part_time_from_among_th.7,integer,d_total_part_time_from_among_th
+e_total_casual_contracted_staff.7,integer,e_total_casual_contracted_staff
+staff_post.8,factor,staff_post
+staff_type.8,factor,staff_type
+total_iteration.8,factor,total_iteration
+a_official_authorized_allocated.8,integer,a_official_authorized_allocated
+b_total_positions_vacant_for_mo.8,integer,b_total_positions_vacant_for_mo
+c_total_staff_assigned_employed.8,integer,c_total_staff_assigned_employed
+d_total_part_time_from_among_th.8,integer,d_total_part_time_from_among_th
+e_total_casual_contracted_staff.8,integer,e_total_casual_contracted_staff
+staff_post.9,factor,staff_post
+staff_type.9,factor,staff_type
+total_iteration.9,factor,total_iteration
+a_official_authorized_allocated.9,integer,a_official_authorized_allocated
+b_total_positions_vacant_for_mo.9,integer,b_total_positions_vacant_for_mo
+c_total_staff_assigned_employed.9,integer,c_total_staff_assigned_employed
+d_total_part_time_from_among_th.9,integer,d_total_part_time_from_among_th
+e_total_casual_contracted_staff.9,integer,e_total_casual_contracted_staff
+staff_post.10,factor,staff_post
+staff_type.10,factor,staff_type
+total_iteration.10,factor,total_iteration
+a_official_authorized_allocated.10,integer,a_official_authorized_allocated
+b_total_positions_vacant_for_mo.10,integer,b_total_positions_vacant_for_mo
+c_total_staff_assigned_employed.10,integer,c_total_staff_assigned_employed
+d_total_part_time_from_among_th.10,integer,d_total_part_time_from_among_th
+e_total_casual_contracted_staff.10,integer,e_total_casual_contracted_staff
+staff_post.11,factor,staff_post
+staff_type.11,factor,staff_type
+total_iteration.11,factor,total_iteration
+a_official_authorized_allocated.11,integer,a_official_authorized_allocated
+b_total_positions_vacant_for_mo.11,integer,b_total_positions_vacant_for_mo
+c_total_staff_assigned_employed.11,integer,c_total_staff_assigned_employed
+d_total_part_time_from_among_th.11,integer,d_total_part_time_from_among_th
+e_total_casual_contracted_staff.11,integer,e_total_casual_contracted_staff
+lga,integer,i. LGA
+state_,integer,ii. STATE
+ngo_donor,integer,iii. NGO/DONOR
+facility,integer,iv. FACILITY
+oth_srcs_fund,character,Pls specify other sources funding at least one casual staff
+how_many_casual_staff_are_funde,integer,How many casual staff are funded by oth_srcs_fund
+lga2,integer,i. LGA
+state2,integer,ii. STATE
+ngo_donor2,integer,iii. NGO/DONOR
+facility2,integer,iv. FACILITY
+other22,character,v. Specify other source of funding for contract staff
+oth_contr_stff_fund,integer,vi. How many contract staff are funded by oth_srcs_fund
+does_this_facility_have_a_means,factor,2101. Does this facility have a means for communicating outside the facility such as a functional phone or radio that are supported by the facility?
+does_this_facility_have_a_funct,factor,2102. Does this facility have a functioning computer?
+is_there_access_to_email_or_int,factor,2103. Is there access to email or internet within the facility today?
+is_the_connecting_time_for_the_,factor,2104. Is the connecting time for the internet paid or reimbursed by the management?
+does_your_facility_have_electri,factor,"2201. Does your facility have electricity from any source such as electricity grid, generator, solar, or other, including for stand-alone devices such as those used to maintain the EPI cold chain?"
+what_is_the_facility_s_main_sou,factor,2202. What is the facility’s main source of electricity?
+what_is_the_facility_s_main_sou_other,factor,"2203a. Other than the main or primary source, does the facility have a secondary or backup source of electricity?"
+other_than_the_main_or_primary_,factor,"2203a. Other than the main or primary source, does the facility have a secondary or backup source of electricity?"
+what_is_the_secondary_source_of,factor,2203b. What is the secondary source of electricity?
+what_is_the_secondary_source_of_other,character,what_is_the_secondary_source_of_other
+in_the_last_7_days_was_electric,factor,"2204. In the last 7 days, was electricity available at all times from the main or any backup source when the facility was open for services?"
+what_is_the_most_commonly_used_,factor,2301. What is the most commonly used source of water for the general facility use at this time?
+what_is_the_most_commonly_used__other,character,what_is_the_most_commonly_used__other
+what_is_the_average_walking_tim,numeric,2301a. What is the average walking time to and from the main source of water?
+in_the_last_2_weeks_how_many_da,integer,"2301b. In the last 2 weeks, how many days was the water supply from this source interrupted for more than two hours at a time?"
+is_there_a_seasonal_difference_,factor,2301c. Is there a seasonal difference in water availability?
+during_other_seasons_is_the_wat,factor,"2301d. During other seasons is the water more available, less available, or not available?"
+is_water_available_from_this_so,factor,2302. Is water available from this source on facility premises?
+WasteDispMe,factor,"2401. How does this facility finally dispose of sharps waste (e.g., filled sharps boxes)?"
+WasteDispMe_other,character,WasteDispMe_other
+OptBurnInci,factor,i. Options for BURN INCINERATOR (Medical Waste)
+OptOpenBurn,factor,i. Options for OPEN BURNING
+OptDumpWitB,factor,i. Options for DUMP WITHOUT BURNING
+OptRemOffsi,factor,i. Options for REMOVE OFFSITE
+DisposalAre,factor,2402a. OBSERVE THE SITE WHERE WASTE IS STORED PRIOR TO COLLECTION FOR OFFSITE DISPOSAL.
+take_a_picture_of_the_disposal_,Image,2402b. ASK TO SEE THE PLACE USED BY THE FACILITY FOR DISPOSAL OF SHARPS WASTE AND INDICATE THE CONDITION OBSERVED.
+MedWasteDis,factor,2402c. Take a picture of the disposal site
+MedWasteDis_other,factor,"2403a. Now, let me ask you a few questions about waste management practices for medical waste other than sharps, such as used bandages."
+OptBurnInMe,factor,2403b. How does the facility finally dispose off medical waste other than sharp boxes?
+CalcInciner,factor,i. Options for BURN INCINERATOR (Medical Waste)
+OptOpnBunMe,factor,i. Options for OPEN BURNING (Medical Waste)
+OptDuWitBuM,factor,i. Options for DUMP WITHOUT BURNING (Medical Waste)
+OptRemOfSMe,factor,i. Options for REMOVE OFFSITE (Medical Waste)
+MedWaDisPla,factor,2404b. ASK TO SEE THE PLACE USED FOR DISPOSAL OF MEDICAL WASTE BY THE FACILITY AND INDICATE THE CONDITION OBSERVED
+c_take_a_picture_of_the_disposa,Image,2404c. Take a picture of the disposal site
+IncinerFunc,factor,2406. Is the incinerator functional today?
+IncFuelAvai,factor,2407. Is fuel for the incinerator available today?
+GuidOnWasMg,factor,2408. Does this facility have any guidelines on health care waste management?
+WasteTraini,factor,2409. Have you or any provider(s) received formal training in health care waste management practices in the past two years?
+ask_to_go_to_the_main_location_,factor,2501a. ASK TO GO TO THE MAIN LOCATION WHERE EQUIPMENT IS FINALLY PROCESSED FOR REUSE.
+specify_location,character,2501b. SPECIFY LOCATION
+electric_autoclave_pressure_and,factor,1a. Electric autoclave (pressure and wet heat)
+is_it_functional,factor,1b. Is it functional?
+non_electric_autoclave_pressure,factor,2a. Non-electric autoclave (pressure and wet heat)
+is_it_functional1,factor,2b. Is it functional?
+electric_dry_heat_sterilizer,factor,3a. Electric dry heat sterilizer
+is_it_functional2,factor,3b. Is it functional?
+electric_boiler_or_steamer_no_p,factor,4a. Electric boiler or steamer (no pressure)
+is_it_functional3,factor,4b. Is it functional?
+non_electric_pot_with_cover_for,factor,5. Non-electric pot with cover for boiling/steam
+heat_source_for_non_electric_eq,factor,6a. Heat source for non-electric equipment
+is_it_functional5,factor,6b. Is it functional?
+automatic_timer_may_be_on_equip,factor,7a. Automatic timer (may be on equipment)
+is_it_functional6,factor,7b. Is it functional?
+temperature_steam_time_tst_indi,factor,8. Temperature-Steam-Time (TST) indicator strips or other item that indicates process is complete
+any_chemicals_for_chemical_high,factor,9. Any chemicals for chemical high-level disinfecting (HLD)
+are_there_any_guidelines_on_fin,factor,"2503. Are there any guidelines on final processing, that is sterilizing or high level disinfecting, equipment available in this site today?"
+reserved_name_for_field_list_labels_312,factor,reserved_name_for_field_list_labels_312
+ambulance_owned_by_facility,factor,i. Ambulance owned by facility
+ambulance_available_on_call,factor,ii. Ambulance available on call
+official_vehicle_not_an_ambulan,factor,iii. Official vehicle (not an ambulance) owned by facility
+official_vehicle_not_an_ambul,factor,iv. Official vehicle (not an ambulance) available on call
+private_vehicles_not_ambulance_,factor,v. Private vehicles (not ambulance) available on call
+self_arranged_by_patient,factor,vi. Self arranged by patient
+any_other,factor,vii. Any other?
+please_specify,character,2601b. Please specify
+does_this_facility_have_ambul,factor,2602a. Does this facility have a functional ambulance or other vehicle for emergency transportation for clients that is stationed at this facility or operates from this facility?
+b_take_a_picture_of_the_ambulan,Image,2602b. Take a picture of the ambulance
+is_fuel_available_today_for_the,factor,2603. Is fuel available today for the ambulance or other emergency transportation vehicle?
+is_there_a_driver_available_ons,factor,2604. Is there a driver available onsite or on call today?
+does_this_facility_have_access_,factor,2605. Does this facility have access to an ambulance or other vehicle for emergency transport for clients that is stationed at another facility or that operates from another facility in near proximity?
+interview_end_time,Time,2701. INTERVIEW END TIME
+result_codes,factor,2702. RESULT CODES
+result_codes_other,factor,result_codes_other
+comments_about_the_respondent,character,2703. COMMENTS ABOUT THE RESPONDENT:
+comments_on_specific_questions,character,2704. COMMENTS ON SPECIFIC QUESTIONS:
+any_other_comments,character,2705. ANY OTHER COMMENTS:
+supervisors_observations,character,2706. SUPERVISOR'S OBSERVATIONS:
+name_of_supervisor,factor,2707. NAME OF SUPERVISOR
+date_int_observations,Date,DATE
+does_this_facility_have_any_for,factor,3201. Does this facility offer antenatal care (ANC) services?
+community_engagement_module_3,factor,3103. Community engagement
+community_sensitization,factor,3104. Community sensitization
+others,character,3105. Please specify other activities that are part of the linkages the facility has with  community health workers
+does_this_facility_offer_antena,factor,3201. Does this facility offer antenatal care (ANC) services?
+reserved_name_for_field_list_labels_353,factor,reserved_name_for_field_list_labels_353
+iron_supplementation,factor,i. Iron supplementation
+folic_acid_supplementation,factor,ii. Folic acid supplementation
+intermittent_preventive_treatme,factor,iii. Intermittent preventive treatment in pregnancy (IPTp) for malaria
+tetanus_toxoid_immunization,factor,iv. Tetanus toxoid immunization
+monitoring_for_hypertensive_dis,factor,v. Monitoring for hypertensive disorder of pregnancy
+hiv_testing,factor,vi. HIV testing
+provision_of_arv_for_hiv_positi,factor,vii. Provision of ARV for HIV positive ANC patients
+diagnosis_and_treatment_for_sex,factor,viii. Diagnosis and treatment for sexually transmitted infections
+what_is_the_most_common_process,factor,3202b. What is the most common process for providing services for sexually transmitted infections for ANC clients?
+Oth_Com_Pro_Sex_Tran,character,Please specify other common process for providing services for sexually transmitted infections for ANC clients?
+reserved_name_for_field_list_labels_366,factor,reserved_name_for_field_list_labels_366
+pcv_test_01,factor,i. PCV test 01
+hepatitis_b_test_04,factor,ii. Hepatitis B  test  04
+hepatitis_c_test_05,factor,iii. Hepatitis C test 05
+syphilis_test_06,factor,iv. Syphilis test 06
+blood_grouping_02,factor,v. Blood grouping 02
+genotype_03,factor,vi. Genotype 03
+hiv_test_07,factor,vii. HIV test 07
+urinalysis_08,factor,viii. Urinalysis 08
+reserved_name_for_field_list_labels_377,factor,reserved_name_for_field_list_labels_377
+national_guidelines_and_orienta,factor,i. National Guidelines and Orientation Package for ANC
+any_anc_check_lists,factor,ii. Any ANC check-lists
+any_anc_job_aids,factor,iii. Any ANC job-aids
+national_guidelines_for_diagnos,factor,iv. National Guidelines for Diagnosis and Treatment of Malaria (2015)
+unfilled_individual_client_reco,factor,v. Unfilled individual client record/chart/card
+blood_pressure_apparatus,factor,1a. Blood pressure apparatus
+is_it_functional_anc,factor,1b. Is it functional?
+fetal_stethoscope,factor,2a. Fetal stethoscope
+is_it_functional_anc2,factor,2b. Is it functional?
+adult_weighing_scale,factor,3a. Adult weighing scale
+is_it_functional_anc3,factor,3b. Is it functional?
+examination_bed,factor,4a. Examination bed
+measuring_tape,factor,4b. Measuring Tape
+take_a_picture_of_the_bed,Image,5. Take a picture of these items
+does_this_facility_have_a_routi,factor,3206. Does this facility have a routine system for follow-up for HIV positive pregnant women who are referred for ARV treatment?
+reserved_name_for_field_list_labels_398,factor,reserved_name_for_field_list_labels_398
+trace_through_phone_calls_text_,factor,i. Trace through phone calls/text message
+trace_through_corps_chips_commu,factor,"ii. Trace through CORPs/ CHIPS, community volunteer or facility outreach"
+referral_forms_used_with_art_se,factor,iii. Referral forms used with ART services
+feedback_from_art_services,factor,iv. Feedback from ART services
+art_information_recorded_on_mch,factor,v. ART information recorded on MCH cards
+unique_id_numbers_with_interlin,factor,vi. Unique ID numbers with interlinked monitoring system for PMTCT and ART services
+does_this_facility_provide_pnc_,factor,3301. Does this facility provide PNC as an outpatient service?
+reserved_name_for_field_list_labels_409,factor,3302. Is there a register where PNC client information is recorded?
+is_there_a_register_where_pnc_c,factor,3302. Is there a register where PNC client information is recorded?
+are_individual_client_charts_ca,factor,3303. Are individual client charts/cards maintained for PNC clients?
+does_this_facility_have_other_c,factor,3304. Does this facility have other check-lists and/or job-aids (including wall charts) for PNC services?
+does_this_facility_provide_any_,factor,"3401. Does this facility provide any post-abortion care such as vacuum aspiration or D&C services to remove retained products of conception, or treatment of infections?"
+reserved_name_for_field_list_labels_417,factor,reserved_name_for_field_list_labels_417
+are_there_any_post_abortion_car,factor,i. Are there any post abortion care guidelines in this service area?
+does_this_facility_have_pac,factor,ii. Does this facility have other check-lists for post abortion care services?
+does_this_facility_have_other_j,factor,iii. Does this facility have other job-aids for post abortion care services
+does_this_facility_offer_delive,factor,does_this_facility_offer_delive
+interview_start_time_deliv_s,Time,interview_start_time_deliv_s
+are_delivery_and_newborn_care_s,factor,are_delivery_and_newborn_care_s
+does_the_facility_provide_24_ho,factor,4106. Does the facility provide 24-hour coverage for delivery services?
+is_a_person_skilled_in_conducti,factor,"4107. Is a person skilled in conducting deliveries present at the facility or on-Call in near proximity 24 hours a day, including weekends, to provide delivery care?"
+during_the_day_what_is_the_lowe,factor,"4108. During the day, what is the lowest level of provider who ever conducts deliveries?"
+during_the_day_what_is_the_lowe_other,character,during_the_day_what_is_the_lowe_other
+during_the_day_is_there_always_,factor,4109. During the day is there always a delivery provider who has been trained in newborn resuscitation using a bag and mask?
+during_nights_and_holidays_what,factor,"4110. During nights and holidays, what is the lowest level of provider who ever conducts deliveries?"
+during_nights_and_holidays_what_other,character,during_nights_and_holidays_what_other
+during_nights_and_holidays_is_t,factor,4111. During nights and holidays is there always a delivery provider who has been trained in newborn resuscitation using a bag and mask?
+does_this_facility_have_a_mater,factor,4112. Does this facility have a maternity waiting center (first stage room) where women can stay prior to giving birth1
+does_this_facility_have_a_deliv,factor,4113a. Does this facility have a maternity delivery room (second stage room)?
+b_take_a_picture_of_the_materni,Image,4113b. Take a picture of the maternity delivery room
+reserved_name_for_field_list_labels_443,factor,reserved_name_for_field_list_labels_443
+national_guidelines_for_integra,factor,i. National guidelines for Integrated Management of Pregnancy and Childbirth (IMPAC)/LSS/ELSS/MLSS/ENC Manuals
+other_national_guidelines_for_e,factor,ii. Other national guidelines for essential childbirth care
+guidelines_for_safe_birth_pract,factor,iii. Guidelines for safe birth practices for PMTCT
+any_other_job_aids_for_integrat,factor,"iv. Any other job aids for Integrated Management of Pregnancy and Childbirth, lifesaving skills, or any other aspects of childbirth and newborn care services?"
+any_check_lists_for_safe_birth_,factor,v. Any check-lists for safe birth practices for PMTCT
+any_job_aids_for_safe_birth_pra,factor,vi. Any job-aids for safe birth practices for PMCTC
+have_you_or_any_provider_s_of_d,factor,4115a. Have you or any provider(s) of delivery service received any training in neonatal resuscitation using the newborn bag and mask in the last two years?
+have_you_or_any_prov_train,factor,"4115b. Have you or any provider(s) of delivery service received any training in any other aspect of delivery or essential newborn care, or lifesaving skills in the last two years ?"
+reserved_name_for_field_list_labels_456,factor,reserved_name_for_field_list_labels_456
+active_management_of_third_stag,factor,"i. Active management of third stage labour (AMTSL) including oxytocin within one minute after delivery, controlled cord traction, and fundal massage after delivery of placenta?"
+administration_of_misoprostol_i,factor,ii. Administration of misoprostol immediately after birth to all women for the prevention of post-partum haemorrhage when oxytocin is not available?
+monitor_and_manage_labour_using,factor,iii. Monitor and manage labour using a partograph
+reserved_name_for_field_list_labels_462,factor,reserved_name_for_field_list_labels_462
+hygienic_cord_care_cut_with_ste,factor,"i. Hygienic cord care (cut with sterile item and apply 4% Chlorhexidine gel to tip and stump, and no application of other substance)"
+thermal_protection_drying_baby_,factor,ii. Thermal protection (drying baby immediately after birth and wrapping)
+immediate_skin_to_skin_contact,factor,iii. Immediate skin to skin contact
+delayed_cord_clamping,factor,iv. Delayed cord clamping
+initiate_breast_feeding_within_,factor,v. Initiate breast feeding within 1 hour postpartum and counsel on exclusive breastfeeding
+reserved_name_for_field_list_labels_472,factor,reserved_name_for_field_list_labels_472
+parenteral_administration_of_an,factor,i. Parenteral administration of antibiotics (IV or IM) for mothers for postpartum sepsis?
+parenteral_administration_of_ox,factor,ii. Parenteral administration of oxytocin for treatment of post-partum haemorrhage (IV or IM)
+parenteral_administration_of_ma,factor,iii. Parenteral administration of magnesium sulphate for management of preeclampsia and eclampsia (IV or IM)
+assisted_vaginal_delivery,factor,iv. Assisted vaginal delivery
+manual_removal_of_placenta,factor,v. Manual removal of placenta
+removal_of_retained_products_of,factor,vi. Removal of retained products of conception
+neonatal_resuscitation_with_bag,factor,vii. Neonatal resuscitation with bag and mask
+caesarean_section,factor,viii. Caesarean section
+reserved_name_for_field_list_labels_482,factor,reserved_name_for_field_list_labels_482
+does_this_facility_routinely_pr,factor,4123. Does this facility routinely provide antibiotics for preterm or prolonged PROM to prevent infection?
+has_this_service_been_provided_,factor,4124. Has this service been provided in the past 12 months?
+does_this_facility_corticos,factor,4125. Does this facility routinely provide corticosteroids for preterm labour
+has_this_service_been_prov_cor,factor,4126. Has this service been provided in the past 12 months?
+does_this_facility_pmcmt,factor,4127. Does this facility provide any PMTCT services for women who deliver in the facility?
+reserved_name_for_field_list_labels_490,factor,reserved_name_for_field_list_labels_490
+assess_maternal_hiv_status,factor,i. Assess maternal HIV status
+provide_hiv_counselling_and_tes,factor,ii. Provide HIV counselling and testing services to all pregnant women in labour whose status is not known
+provide_maternal_arv_to_infecte,factor,iii. Provide maternal ARV to infected mothers for PMTCT
+provide_arv_to_newborns_of_infe,factor,iv. Provide ARV to newborns of infected mothers for PMTCT
+has_there_been_a_delivery_for_a,factor,4129. Has there been a delivery for an HIV positive woman during the past 3 months?
+reserved_name_for_field_list_labels_501,factor,reserved_name_for_field_list_labels_501
+clean_running_water_piped_bucke,factor,"i. Clean running water (piped, bucket with tap, or pour pitcher)"
+hand_washing_liquid_soap,factor,ii. Hand-washing liquid soap
+alcohol_based_hand_rub,factor,iii. Alcohol based hand rub
+waste_receptacle_bin_with_lid_a,factor,iv. Waste receptacle bin with lid and plastic bin liner
+waste_bin_is_clearly_marked_for,factor,"v. Waste bin is clearly marked, for example, by label or colour, for infectious non-sharp waste"
+sharps_container_safety_box,factor,"vi. Sharps container (""safety box"")"
+environmental_disinfectant_e_g_,factor,"vii. Environmental disinfectant (e.g., chlorine, alcohol)"
+disposable_syringes_with_dispos,factor,viii. Disposable syringes with disposable needles
+auto_disable_syringes,factor,ix. Auto-disable syringes
+take_a_picture_of_the_water_rec,Image,4131b. Take a picture of the water receptacle
+is_there_electricity_in_this_se,Image,4132. Is there electricity in this service area that is functional now?
+reserved_name_for_field_list_labels_517,factor,reserved_name_for_field_list_labels_517
+unfilled_partograph,factor,1. Unfilled partograph
+delivery_bed,factor,2. Delivery bed
+disposable_non_sterile_latex_gl,factor,3. Disposable non-sterile latex gloves
+disposable_sterile_latex_gloves,factor,4. Disposable sterile latex gloves
+examination_light_flashlight_ok,factor,5. Examination light (flashlight ok)
+delivery_pack,factor,6. Delivery pack
+cord_clamp,factor,7. Cord clamp
+episiotomy_scissors,factor,8. Episiotomy scissors
+scissors_or_surgical_blade_to_c,factor,9. Scissors or surgical blade to cut cord
+suture_materials_with_needle,factor,10. Suture materials with needle
+needle_holder,factor,11. Needle holder
+manual_vacuum_extractor,factor,12. Manual vacuum extractor
+vacuum_aspirator,factor,13. Vacuum aspirator
+d_c_kit,factor,14. D&C Kit
+speculum,factor,15. Speculum
+blood_pressure_apparatus_2,factor,16. Blood pressure apparatus
+fetal_stethoscope_2,factor,17. Fetal stethoscope
+wrap_for_drying_newborn,factor,18. Wrap for drying newborn
+infant_scale_with_100_gram_grad,factor,19. Infant scale(with 100 gram gradation)
+incubator_may_be_in_nursery,factor,20. Incubator (MAY BE IN NURSERY)
+resuscitation_table_with_heat_s,factor,21. Resuscitation table (with heat source) (for newborn resuscitation)
+electric_or_manual_suction_pump,factor,22. Electric or manual suction pump
+suction_catheter_for_suction_ap,factor,23. Suction catheter (for suction apparatus) for suctioning newborn
+suction_bulb_single_use,factor,24. Suction bulb (single use)
+suction_bulb_sterilizable_multi,factor,25. Suction bulb (sterilizable multi-use)
+thermometer,factor,26. Thermometer
+self_inflating_bag_and_mask_for,factor,27. Self-inflating bag and mask for resuscitation - adult
+newborn_bag_and_mask_size_0_for,factor,28. Newborn bag and mask size 0 for resuscitation of pre-term babies
+newborn_bag_and_mask_size_1_for,factor,29. Newborn bag and mask size 1 for resuscitation of term babies
+take_a_picture_of_the_unfilled_,Image,4134c. Take a picture of the unfilled partograph
+reserved_name_for_field_list_labels_550,factor,reserved_name_for_field_list_labels_550
+examination_light_flashlig_fun,factor,1. Examination light (flashlight ok)
+cord_clamp_func,factor,2. Cord clamp
+episiotomy_scissors_func,factor,3. Episiotomy scissors
+scissors_or_surgical_blade_func,factor,4. Scissors or surgical blade to cut cord
+needle_holder_func,factor,5. Needle holder
+manual_vacuum_extractor_func,factor,6. Manual vacuum extractor
+vacuum_aspirator_func,factor,7. Vacuum aspirator
+d_c_kit_func,factor,8. D&C Kit
+speculum_func,factor,9. Speculum
+blood_pressure_apparatus_func,factor,10. Blood pressure apparatus
+fetal_stethoscope_func,factor,11. Fetal stethoscope
+wrap_for_drying_newborn_func,factor,12. Wrap for drying newborn
+infant_scale_with_100_gr_func,factor,13. Infant scale(with 100 gram gradation)
+incubator_may_be_in_nursery_fun,factor,14. Incubator (MAY BE IN NURSERY)
+resuscitation_table_with_h_func,factor,15. Resuscitation table (with heat source) (for newborn resuscitation)
+electric_or_manual_suction_func,factor,16. Electric or manual suction pump
+suction_catheter_for_suct_func,factor,17. Suction catheter (for suction apparatus) for suctioning newborn
+suction_bulb_single_use_func,factor,18. Suction bulb (single use)
+suction_bulb_sterilizable_func,factor,19. Suction bulb (sterilizable multi-use)
+thermometer_func,factor,20. Thermometer
+self_inflating_bag_and_ma_func,factor,21. Self-inflating bag and mask for resuscitation - adult
+newborn_bag_and_mask_si_func,factor,22. Newborn bag and mask size 0 for resuscitation of pre-term babies
+newborn_bag_and_mask_si_func2,factor,23. Newborn bag and mask size 1 for resuscitation of term babies
+at_any_time_during_the_past_3_m,factor,4135c. At any time during the past 3 months has the newborn bag and mask for term babies been unavailable for this unit for any reason?
+does_this_unit_ever_provide_oxy,factor,4135d. Does this unit ever provide oxygen to patients?
+is_there_any_oxygen_currently_i,factor,4136. Is there any oxygen currently in the unit?
+flowmeter_for_oxygen_therapy_wi,factor,1a. Flowmeter for oxygen therapy (with humidification)
+is_it_functioning,factor,1b. Is it functioning?
+oxygen_delivery_apparatus_key_c,factor,"2a. Oxygen delivery apparatus (key connecting tubes and mask/nasal prongs,)"
+is_it_functioning_deliv,factor,2b. Is it functioning?
+oxygen_analyzer,factor,3a. Oxygen Analyzer
+is_it_functioning_analyz,factor,3b. Is it functioning?
+pulse_oxymeter,factor,4a. Pulse oxymeter
+is_it_functioning_pulse,factor,4b. Is it functioning?
+was_there_any_time_in_the_last_,factor,was_there_any_time_in_the_last_
+does_this_facility_stock_any_dr,factor,does_this_facility_stock_any_dr
+antibiotic_eye_ointment_erythro,factor,antibiotic_eye_ointment_erythro
+any_stockout_in_the_last_3_antib,factor,any_stockout_in_the_last_3_antib
+hydralazine_injection,factor,hydralazine_injection
+any_stockout_in_the_last_3_hydra,factor,any_stockout_in_the_last_3_hydra
+labetalol_inj_200mg_ampoule,factor,labetalol_inj_200mg_ampoule
+any_stockout_in_the_last_3_labe,factor,any_stockout_in_the_last_3_labe
+magnesium_sulphate_injection,factor,magnesium_sulphate_injection
+any_stockout_in_the_last_3_mgs4,factor,any_stockout_in_the_last_3_mgs4
+intravenous_infusion_set,factor,intravenous_infusion_set
+any_stockout_in_the_last_3_intr,factor,any_stockout_in_the_last_3_intr
+iv_cannula,factor,iv_cannula
+any_stockout_in_the_last_3_cann,factor,any_stockout_in_the_last_3_cann
+dextrose_and_water_5_d5w_intra,factor,dextrose_and_water_5_d5w_intra
+any_stockout_in_the_last_3_mont,factor,any_stockout_in_the_last_3_mont
+sodium_chloride_09ns_intravenou,factor,sodium_chloride_09ns_intravenou
+any_stockout_in_the_last_3_NaCl,factor,any_stockout_in_the_last_3_NaCl
+skin_disinfectant,factor,skin_disinfectant
+any_stockout_in_the_last_skin,factor,any_stockout_in_the_last_skin
+chlorhexidine_solution_for_um,factor,chlorhexidine_solution_for_um
+any_stockout_in_the_4_chlorhex,factor,any_stockout_in_the_4_chlorhex
+oxytocin_injection,factor,oxytocin_injection
+any_stockout_in_the_oxytocin,factor,any_stockout_in_the_oxytocin
+is_the_oxytocin_stored_in_cold_,factor,is_the_oxytocin_stored_in_cold_
+are_healthy_newborns_routinely_,factor,are_healthy_newborns_routinely_
+reserved_name_for_field_list_labels_624,factor,reserved_name_for_field_list_labels_624
+temperature_newborn,factor,temperature_newborn
+respiratory_rate,factor,respiratory_rate
+jaundice,factor,jaundice
+umbilical_cord_status,factor,umbilical_cord_status
+feeding_status,factor,feeding_status
+are_healthy_mothers_routinely_m,factor,are_healthy_mothers_routinely_m
+reserved_name_for_field_list_labels_632,factor,reserved_name_for_field_list_labels_632
+blood_pressure,factor,blood_pressure
+temperature,factor,temperature
+fundal_status,factor,fundal_status
+check_pads_for_bleeding,factor,check_pads_for_bleeding
+are_there_any_guidelines_or_job,factor,are_there_any_guidelines_or_job
+reserved_name_for_field_list_labels_639,factor,reserved_name_for_field_list_labels_639
+any_guidelines_or_job_aids_newb,factor,any_guidelines_or_job_aids_newb
+standard_records_with_preprinte,factor,standard_records_with_preprinte
+any_guidelines_or_job_aids_post,factor,any_guidelines_or_job_aids_post
+is_kmc_kangaroo_mother_care_for,factor,is_kmc_kangaroo_mother_care_for
+has_kmc_been_provided_at_any_ti,factor,has_kmc_been_provided_at_any_ti
+are_there_any_job_aids_or_guide,factor,are_there_any_job_aids_or_guide
+have_you_or_another_provider_re,factor,have_you_or_another_provider_re
+has_this_facility_ever_seen_cas,factor,has_this_facility_ever_seen_cas
+reserved_name_for_field_list_labels_653,factor,reserved_name_for_field_list_labels_653
+immediate_referral_without_prov,factor,immediate_referral_without_prov
+provide_one_dose_injectable_ant,factor,provide_one_dose_injectable_ant
+prescribe_the_full_antibiotic_r,factor,prescribe_the_full_antibiotic_r
+are_there_any_job_aids_sepsis,factor,are_there_any_job_aids_sepsis
+has_this_facility_had_a_newborn,factor,has_this_facility_had_a_newborn
+have_you_or_another_provi_sepsis,factor,have_you_or_another_provi_sepsis
+are_maternal_death_reviews_carr,factor,are_maternal_death_reviews_carr
+are_neonatal_death_reviews_carr,factor,are_neonatal_death_reviews_carr
+are_perinatal_death_reviews_car,factor,are_perinatal_death_reviews_car
+is_a_delivery_register_maintain,factor,is_a_delivery_register_maintain
+reserved_name_for_field_list_labels_668,factor,reserved_name_for_field_list_labels_668
+floor_swept_no_obvious_dirt_or_,factor,floor_swept_no_obvious_dirt_or_
+counters_tables_chairs_wiped_cl,factor,counters_tables_chairs_wiped_cl
+needles_sharps_outside_sharps_b,factor,needles_sharps_outside_sharps_b
+sharps_box_overflowing_or_torn_,factor,sharps_box_overflowing_or_torn_
+bandages_infectious_waste_lying,factor,bandages_infectious_waste_lying
+were_staff_wearing_appropraite_,factor,were_staff_wearing_appropraite_
+were_staff_wearing_id_badges_in,factor,were_staff_wearing_id_badges_in
+were_non_smoking_signs_observed,factor,were_non_smoking_signs_observed
+interview_end_4_3,factor,interview_end_4_3
+result_codes_last_visit,factor,result_codes_last_visit
+result_codes_last_visit_other,factor,result_codes_last_visit_other
+comments_about_the_respond_4_3,factor,comments_about_the_respond_4_3
+comments_on_specific_ques_4_3,factor,comments_on_specific_ques_4_3
+any_other_comments_4_3,factor,any_other_comments_4_3
+supervisors_observations_4_3,factor,supervisors_observations_4_3
+name_of_supervisor_4_3,factor,name_of_supervisor_4_3
+date_4_3,Date,date_4_3
+last_Month_name,factor,last_Month_name
+last2_Month_name,factor,last2_Month_name
+last3_Month_name,factor,last3_Month_name
+last_Month_label,factor,last_Month_label
+last2_Month_label,factor,last2_Month_label
+last3_Month_label,factor,last3_Month_label
+outpatient_visits,integer,outpatient_visits
+paediatric_0_59m___curative_car,integer,paediatric_0_59m___curative_car
+line_,integer,line_
+family_planning_new_acceptors,integer,family_planning_new_acceptors
+antenatal_care_1st_visit,integer,antenatal_care_1st_visit
+antenatal_care_total_visit,integer,antenatal_care_total_visit
+antental_women_tested_for_hiv,integer,antental_women_tested_for_hiv
+delivery_vaginal,integer,delivery_vaginal
+deliveries_c_section,integer,deliveries_c_section
+admissions_for__newborn_inpatie,integer,admissions_for__newborn_inpatie
+total_newborn_inpatient_days,integer,total_newborn_inpatient_days
+total_number_of_indicators,integer,total_number_of_indicators
+Indicator_name_count,integer,Indicator_name_count
+current_ind_name,factor,current_ind_name
+current_ind_label,factor,current_ind_label
+status_of_data_source_for_cur1,factor,status_of_data_source_for_cur1
+status_of_data_source_for_cur2,factor,status_of_data_source_for_cur2
+current_indicator_iteration,integer,current_indicator_iteration
+status_of_data_source_for_cur,factor,status_of_data_source_for_cur
+data_source_for_3_months_count,integer,data_source_for_3_months_count
+current_ind_name.1,factor,current_ind_name
+current_ind_label.1,factor,current_ind_label
+status_of_data_source_for_cur1.1,factor,status_of_data_source_for_cur1
+status_of_data_source_for_cur2.1,factor,status_of_data_source_for_cur2
+current_indicator_iteration.1,integer,current_indicator_iteration
+status_of_data_source_for_cur.1,factor,status_of_data_source_for_cur
+data_source_for_3_months_count.1,integer,data_source_for_3_months_count
+current_ind_name.2,factor,current_ind_name
+current_ind_label.2,factor,current_ind_label
+status_of_data_source_for_cur1.2,factor,status_of_data_source_for_cur1
+status_of_data_source_for_cur2.2,factor,status_of_data_source_for_cur2
+current_indicator_iteration.2,integer,current_indicator_iteration
+status_of_data_source_for_cur.2,factor,status_of_data_source_for_cur
+data_source_for_3_months_count.2,integer,data_source_for_3_months_count
+current_ind_name.3,factor,current_ind_name
+current_ind_label.3,factor,current_ind_label
+status_of_data_source_for_cur1.3,factor,status_of_data_source_for_cur1
+status_of_data_source_for_cur2.3,factor,status_of_data_source_for_cur2
+current_indicator_iteration.3,integer,current_indicator_iteration
+status_of_data_source_for_cur.3,factor,status_of_data_source_for_cur
+data_source_for_3_months_count.3,integer,data_source_for_3_months_count
+current_ind_name.4,factor,current_ind_name
+current_ind_label.4,factor,current_ind_label
+status_of_data_source_for_cur1.4,factor,status_of_data_source_for_cur1
+status_of_data_source_for_cur2.4,factor,status_of_data_source_for_cur2
+current_indicator_iteration.4,integer,current_indicator_iteration
+status_of_data_source_for_cur.4,factor,status_of_data_source_for_cur
+data_source_for_3_months_count.4,integer,data_source_for_3_months_count
+current_ind_name.5,factor,current_ind_name
+current_ind_label.5,factor,current_ind_label
+status_of_data_source_for_cur1.5,factor,status_of_data_source_for_cur1
+status_of_data_source_for_cur2.5,factor,status_of_data_source_for_cur2
+current_indicator_iteration.5,integer,current_indicator_iteration
+status_of_data_source_for_cur.5,factor,status_of_data_source_for_cur
+data_source_for_3_months_count.5,integer,data_source_for_3_months_count
+current_ind_name.6,factor,current_ind_name
+current_ind_label.6,factor,current_ind_label
+status_of_data_source_for_cur1.6,factor,status_of_data_source_for_cur1
+status_of_data_source_for_cur2.6,factor,status_of_data_source_for_cur2
+current_indicator_iteration.6,integer,current_indicator_iteration
+status_of_data_source_for_cur.6,factor,status_of_data_source_for_cur
+data_source_for_3_months_count.6,integer,data_source_for_3_months_count
+current_ind_name.7,factor,current_ind_name
+current_ind_label.7,factor,current_ind_label
+status_of_data_source_for_cur1.7,factor,status_of_data_source_for_cur1
+status_of_data_source_for_cur2.7,factor,status_of_data_source_for_cur2
+current_indicator_iteration.7,integer,current_indicator_iteration
+status_of_data_source_for_cur.7,factor,status_of_data_source_for_cur
+data_source_for_3_months_count.7,integer,data_source_for_3_months_count
+data_source_for_3_months,factor,data_source_for_3_months
+current_ind_name.8,factor,current_ind_name
+current_ind_label.8,factor,current_ind_label
+status_of_data_source_for_cur1.8,factor,status_of_data_source_for_cur1
+status_of_data_source_for_cur2.8,factor,status_of_data_source_for_cur2
+current_indicator_iteration.8,integer,current_indicator_iteration
+status_of_data_source_for_cur.8,factor,status_of_data_source_for_cur
+data_source_for_3_months_count.8,integer,data_source_for_3_months_count
+data_source_for_3_months.1,factor,data_source_for_3_months
+current_ind_name.9,factor,current_ind_name
+current_ind_label.9,factor,current_ind_label
+status_of_data_source_for_cur1.9,factor,status_of_data_source_for_cur1
+status_of_data_source_for_cur2.9,factor,status_of_data_source_for_cur2
+current_indicator_iteration.9,factor,current_indicator_iteration
+status_of_data_source_for_cur.9,factor,status_of_data_source_for_cur
+data_source_for_3_months_count.9,integer,data_source_for_3_months_count
+data_source_for_3_months.2,factor,data_source_for_3_months
+data_source_for_3_months.3,factor,data_source_for_3_months
+data_source_for_3_months.4,factor,data_source_for_3_months
+current_ind_name.10,factor,current_ind_name
+current_ind_label.10,factor,current_ind_label
+status_of_data_source_for_cur1.10,factor,status_of_data_source_for_cur1
+status_of_data_source_for_cur2.10,factor,status_of_data_source_for_cur2
+current_indicator_iteration.10,integer,current_indicator_iteration
+status_of_data_source_for_cur.10,factor,status_of_data_source_for_cur
+data_source_for_3_months_count.10,integer,data_source_for_3_months_count
+data_source_for_3_months.5,factor,data_source_for_3_months
+data_source_for_3_months.6,factor,data_source_for_3_months
+data_source_for_3_months.7,factor,data_source_for_3_months
+data_source_for_3_months.8,factor,data_source_for_3_months.8
+data_source_for_3_months.9,factor,data_source_for_3_months.9
+data_source_for_3_months.10,factor,data_source_for_3_months.10
+data_source_for_3_months.1..current_month,factor,data_source_for_3_months.1..current_month
+data_source_for_3_months.1..current_month_full,factor,data_source_for_3_months.1..current_month_full
+data_source_for_3_months.1..data_source_in_current_month,factor,data_source_for_3_months.1..data_source_in_current_month
+data_source_for_3_months.1..for_current_month_is_the_inf,integer,data_source_for_3_months.1..for_current_month_is_the_inf
+data_source_for_3_months.1..in_current_month_what_is_the,integer,data_source_for_3_months.1..in_current_month_what_is_the
+data_source_for_3_months.2..current_month,factor,data_source_for_3_months.2..current_month
+data_source_for_3_months.2..current_month_full,factor,data_source_for_3_months.2..current_month_full
+data_source_for_3_months.2..data_source_in_current_month,factor,data_source_for_3_months.2..data_source_in_current_month
+data_source_for_3_months.2..for_current_month_is_the_inf,integer,data_source_for_3_months.2..for_current_month_is_the_inf
+data_source_for_3_months.2..in_current_month_what_is_the,integer,data_source_for_3_months.2..in_current_month_what_is_the
+data_source_for_3_months.3..current_month,factor,data_source_for_3_months.3..current_month
+data_source_for_3_months.3..current_month_full,factor,data_source_for_3_months.3..current_month_full
+data_source_for_3_months.3..data_source_in_current_month,factor,data_source_for_3_months.3..data_source_in_current_month
+data_source_for_3_months.3..for_current_month_is_the_inf,integer,data_source_for_3_months.3..for_current_month_is_the_inf
+data_source_for_3_months.3..in_current_month_what_is_the,integer,data_source_for_3_months.3..in_current_month_what_is_the
+data_source_for_3_months.1..current_month.1,factor,data_source_for_3_months.1..current_month.1
+data_source_for_3_months.1..current_month_full.1,factor,data_source_for_3_months.1..current_month_full.1
+data_source_for_3_months.1..data_source_in_current_month.1,factor,data_source_for_3_months.1..data_source_in_current_month.1
+data_source_for_3_months.1..for_current_month_is_the_inf.1,integer,data_source_for_3_months.1..for_current_month_is_the_inf.1
+data_source_for_3_months.1..in_current_month_what_is_the.1,integer,data_source_for_3_months.1..in_current_month_what_is_the.1
+data_source_for_3_months.2..current_month.1,factor,data_source_for_3_months.2..current_month.1
+data_source_for_3_months.2..current_month_full.1,factor,data_source_for_3_months.2..current_month_full.1
+data_source_for_3_months.2..data_source_in_current_month.1,factor,data_source_for_3_months.2..data_source_in_current_month.1
+data_source_for_3_months.2..for_current_month_is_the_inf.1,integer,data_source_for_3_months.2..for_current_month_is_the_inf.1
+data_source_for_3_months.2..in_current_month_what_is_the.1,integer,data_source_for_3_months.2..in_current_month_what_is_the.1
+data_source_for_3_months.3..current_month.1,factor,data_source_for_3_months.3..current_month.1
+data_source_for_3_months.3..current_month_full.1,factor,data_source_for_3_months.3..current_month_full.1
+data_source_for_3_months.3..data_source_in_current_month.1,factor,data_source_for_3_months.3..data_source_in_current_month.1
+data_source_for_3_months.3..for_current_month_is_the_inf.1,integer,data_source_for_3_months.3..for_current_month_is_the_inf.1
+data_source_for_3_months.3..in_current_month_what_is_the.1,integer,data_source_for_3_months.3..in_current_month_what_is_the.1
+data_source_for_3_months.1..current_month.2,factor,data_source_for_3_months.1..current_month.2
+data_source_for_3_months.1..current_month_full.2,factor,data_source_for_3_months.1..current_month_full.2
+data_source_for_3_months.1..data_source_in_current_month.2,factor,data_source_for_3_months.1..data_source_in_current_month.2
+data_source_for_3_months.1..for_current_month_is_the_inf.2,integer,data_source_for_3_months.1..for_current_month_is_the_inf.2
+data_source_for_3_months.1..in_current_month_what_is_the.2,integer,data_source_for_3_months.1..in_current_month_what_is_the.2
+data_source_for_3_months.2..current_month.2,factor,data_source_for_3_months.2..current_month.2
+data_source_for_3_months.2..current_month_full.2,factor,data_source_for_3_months.2..current_month_full.2
+data_source_for_3_months.2..data_source_in_current_month.2,factor,data_source_for_3_months.2..data_source_in_current_month.2
+data_source_for_3_months.2..for_current_month_is_the_inf.2,integer,data_source_for_3_months.2..for_current_month_is_the_inf.2
+data_source_for_3_months.2..in_current_month_what_is_the.2,integer,data_source_for_3_months.2..in_current_month_what_is_the.2
+data_source_for_3_months.3..current_month.2,factor,data_source_for_3_months.3..current_month.2
+data_source_for_3_months.3..current_month_full.2,factor,data_source_for_3_months.3..current_month_full.2
+data_source_for_3_months.3..data_source_in_current_month.2,factor,data_source_for_3_months.3..data_source_in_current_month.2
+data_source_for_3_months.3..for_current_month_is_the_inf.2,integer,data_source_for_3_months.3..for_current_month_is_the_inf.2
+data_source_for_3_months.3..in_current_month_what_is_the.2,integer,data_source_for_3_months.3..in_current_month_what_is_the.2
+data_source_for_3_months.1..current_month.3,factor,data_source_for_3_months.1..current_month.3
+data_source_for_3_months.1..current_month_full.3,factor,data_source_for_3_months.1..current_month_full.3
+data_source_for_3_months.1..data_source_in_current_month.3,factor,data_source_for_3_months.1..data_source_in_current_month.3
+data_source_for_3_months.1..for_current_month_is_the_inf.3,integer,data_source_for_3_months.1..for_current_month_is_the_inf.3
+data_source_for_3_months.1..in_current_month_what_is_the.3,integer,data_source_for_3_months.1..in_current_month_what_is_the.3
+data_source_for_3_months.2..current_month.3,factor,data_source_for_3_months.2..current_month.3
+data_source_for_3_months.2..current_month_full.3,factor,data_source_for_3_months.2..current_month_full.3
+data_source_for_3_months.2..data_source_in_current_month.3,factor,data_source_for_3_months.2..data_source_in_current_month.3
+data_source_for_3_months.2..for_current_month_is_the_inf.3,integer,data_source_for_3_months.2..for_current_month_is_the_inf.3
+data_source_for_3_months.2..in_current_month_what_is_the.3,integer,data_source_for_3_months.2..in_current_month_what_is_the.3
+data_source_for_3_months.3..current_month.3,factor,data_source_for_3_months.3..current_month.3
+data_source_for_3_months.3..current_month_full.3,factor,data_source_for_3_months.3..current_month_full.3
+data_source_for_3_months.3..data_source_in_current_month.3,factor,data_source_for_3_months.3..data_source_in_current_month.3
+data_source_for_3_months.3..for_current_month_is_the_inf.3,integer,data_source_for_3_months.3..for_current_month_is_the_inf.3
+data_source_for_3_months.3..in_current_month_what_is_the.3,integer,data_source_for_3_months.3..in_current_month_what_is_the.3
+data_source_for_3_months.1..current_month.4,factor,data_source_for_3_months.1..current_month.4
+data_source_for_3_months.1..current_month_full.4,factor,data_source_for_3_months.1..current_month_full.4
+data_source_for_3_months.1..data_source_in_current_month.4,factor,data_source_for_3_months.1..data_source_in_current_month.4
+data_source_for_3_months.1..for_current_month_is_the_inf.4,integer,data_source_for_3_months.1..for_current_month_is_the_inf.4
+data_source_for_3_months.1..in_current_month_what_is_the.4,integer,data_source_for_3_months.1..in_current_month_what_is_the.4
+data_source_for_3_months.2..current_month.4,factor,data_source_for_3_months.2..current_month.4
+data_source_for_3_months.2..current_month_full.4,factor,data_source_for_3_months.2..current_month_full.4
+data_source_for_3_months.2..data_source_in_current_month.4,factor,data_source_for_3_months.2..data_source_in_current_month.4
+data_source_for_3_months.2..for_current_month_is_the_inf.4,integer,data_source_for_3_months.2..for_current_month_is_the_inf.4
+data_source_for_3_months.2..in_current_month_what_is_the.4,integer,data_source_for_3_months.2..in_current_month_what_is_the.4
+data_source_for_3_months.3..current_month.4,factor,data_source_for_3_months.3..current_month.4
+data_source_for_3_months.3..current_month_full.4,factor,data_source_for_3_months.3..current_month_full.4
+data_source_for_3_months.3..data_source_in_current_month.4,factor,data_source_for_3_months.3..data_source_in_current_month.4
+data_source_for_3_months.3..for_current_month_is_the_inf.4,integer,data_source_for_3_months.3..for_current_month_is_the_inf.4
+data_source_for_3_months.3..in_current_month_what_is_the.4,integer,data_source_for_3_months.3..in_current_month_what_is_the.4
+data_source_for_3_months.1..current_month.5,factor,data_source_for_3_months.1..current_month.5
+data_source_for_3_months.1..current_month_full.5,factor,data_source_for_3_months.1..current_month_full.5
+data_source_for_3_months.1..data_source_in_current_month.5,factor,data_source_for_3_months.1..data_source_in_current_month.5
+data_source_for_3_months.1..for_current_month_is_the_inf.5,integer,data_source_for_3_months.1..for_current_month_is_the_inf.5
+data_source_for_3_months.1..in_current_month_what_is_the.5,integer,data_source_for_3_months.1..in_current_month_what_is_the.5
+data_source_for_3_months.2..current_month.5,factor,data_source_for_3_months.2..current_month.5
+data_source_for_3_months.2..current_month_full.5,factor,data_source_for_3_months.2..current_month_full.5
+data_source_for_3_months.2..data_source_in_current_month.5,factor,data_source_for_3_months.2..data_source_in_current_month.5
+data_source_for_3_months.2..for_current_month_is_the_inf.5,integer,data_source_for_3_months.2..for_current_month_is_the_inf.5
+data_source_for_3_months.2..in_current_month_what_is_the.5,integer,data_source_for_3_months.2..in_current_month_what_is_the.5
+data_source_for_3_months.3..current_month.5,factor,data_source_for_3_months.3..current_month.5
+data_source_for_3_months.3..current_month_full.5,factor,data_source_for_3_months.3..current_month_full.5
+data_source_for_3_months.3..data_source_in_current_month.5,factor,data_source_for_3_months.3..data_source_in_current_month.5
+data_source_for_3_months.3..for_current_month_is_the_inf.5,integer,data_source_for_3_months.3..for_current_month_is_the_inf.5
+data_source_for_3_months.3..in_current_month_what_is_the.5,integer,data_source_for_3_months.3..in_current_month_what_is_the.5
+data_source_for_3_months.1..current_month.6,factor,data_source_for_3_months.1..current_month.6
+data_source_for_3_months.1..current_month_full.6,factor,data_source_for_3_months.1..current_month_full.6
+data_source_for_3_months.1..data_source_in_current_month.6,factor,data_source_for_3_months.1..data_source_in_current_month.6
+data_source_for_3_months.1..for_current_month_is_the_inf.6,integer,data_source_for_3_months.1..for_current_month_is_the_inf.6
+data_source_for_3_months.1..in_current_month_what_is_the.6,integer,data_source_for_3_months.1..in_current_month_what_is_the.6
+data_source_for_3_months.2..current_month.6,factor,data_source_for_3_months.2..current_month.6
+data_source_for_3_months.2..current_month_full.6,factor,data_source_for_3_months.2..current_month_full.6
+data_source_for_3_months.2..data_source_in_current_month.6,factor,data_source_for_3_months.2..data_source_in_current_month.6
+data_source_for_3_months.2..for_current_month_is_the_inf.6,integer,data_source_for_3_months.2..for_current_month_is_the_inf.6
+data_source_for_3_months.2..in_current_month_what_is_the.6,integer,data_source_for_3_months.2..in_current_month_what_is_the.6
+data_source_for_3_months.3..current_month.6,factor,data_source_for_3_months.3..current_month.6
+data_source_for_3_months.3..current_month_full.6,factor,data_source_for_3_months.3..current_month_full.6
+data_source_for_3_months.3..data_source_in_current_month.6,factor,data_source_for_3_months.3..data_source_in_current_month.6
+data_source_for_3_months.3..for_current_month_is_the_inf.6,integer,data_source_for_3_months.3..for_current_month_is_the_inf.6
+data_source_for_3_months.3..in_current_month_what_is_the.6,integer,data_source_for_3_months.3..in_current_month_what_is_the.6
+data_source_for_3_months.1..current_month.7,factor,data_source_for_3_months.1..current_month.7
+data_source_for_3_months.1..current_month_full.7,factor,data_source_for_3_months.1..current_month_full.7
+data_source_for_3_months.1..data_source_in_current_month.7,factor,data_source_for_3_months.1..data_source_in_current_month.7
+data_source_for_3_months.1..for_current_month_is_the_inf.7,integer,data_source_for_3_months.1..for_current_month_is_the_inf.7
+data_source_for_3_months.1..in_current_month_what_is_the.7,integer,data_source_for_3_months.1..in_current_month_what_is_the.7
+data_source_for_3_months.2..current_month.7,factor,data_source_for_3_months.2..current_month.7
+data_source_for_3_months.2..current_month_full.7,factor,data_source_for_3_months.2..current_month_full.7
+data_source_for_3_months.2..data_source_in_current_month.7,factor,data_source_for_3_months.2..data_source_in_current_month.7
+data_source_for_3_months.2..for_current_month_is_the_inf.7,integer,data_source_for_3_months.2..for_current_month_is_the_inf.7
+data_source_for_3_months.2..in_current_month_what_is_the.7,integer,data_source_for_3_months.2..in_current_month_what_is_the.7
+data_source_for_3_months.3..current_month.7,factor,data_source_for_3_months.3..current_month.7
+data_source_for_3_months.3..current_month_full.7,factor,data_source_for_3_months.3..current_month_full.7
+data_source_for_3_months.3..data_source_in_current_month.7,factor,data_source_for_3_months.3..data_source_in_current_month.7
+data_source_for_3_months.3..for_current_month_is_the_inf.7,integer,data_source_for_3_months.3..for_current_month_is_the_inf.7
+data_source_for_3_months.3..in_current_month_what_is_the.7,integer,data_source_for_3_months.3..in_current_month_what_is_the.7
+data_source_for_3_months.1..current_month.8,factor,data_source_for_3_months.1..current_month.8
+data_source_for_3_months.1..current_month_full.8,factor,data_source_for_3_months.1..current_month_full.8
+data_source_for_3_months.1..data_source_in_current_month.8,factor,data_source_for_3_months.1..data_source_in_current_month.8
+data_source_for_3_months.1..for_current_month_is_the_inf.8,integer,data_source_for_3_months.1..for_current_month_is_the_inf.8
+data_source_for_3_months.1..in_current_month_what_is_the.8,integer,data_source_for_3_months.1..in_current_month_what_is_the.8
+data_source_for_3_months.2..current_month.8,factor,data_source_for_3_months.2..current_month.8
+data_source_for_3_months.2..current_month_full.8,factor,data_source_for_3_months.2..current_month_full.8
+data_source_for_3_months.2..data_source_in_current_month.8,factor,data_source_for_3_months.2..data_source_in_current_month.8
+data_source_for_3_months.2..for_current_month_is_the_inf.8,integer,data_source_for_3_months.2..for_current_month_is_the_inf.8
+data_source_for_3_months.2..in_current_month_what_is_the.8,integer,data_source_for_3_months.2..in_current_month_what_is_the.8
+data_source_for_3_months.3..current_month.8,factor,data_source_for_3_months.3..current_month.8
+data_source_for_3_months.3..current_month_full.8,factor,data_source_for_3_months.3..current_month_full.8
+data_source_for_3_months.3..data_source_in_current_month.8,factor,data_source_for_3_months.3..data_source_in_current_month.8
+data_source_for_3_months.3..for_current_month_is_the_inf.8,integer,data_source_for_3_months.3..for_current_month_is_the_inf.8
+data_source_for_3_months.3..in_current_month_what_is_the.8,integer,data_source_for_3_months.3..in_current_month_what_is_the.8
+data_source_for_3_months.1..current_month.9,factor,data_source_for_3_months.1..current_month.9
+data_source_for_3_months.1..current_month_full.9,factor,data_source_for_3_months.1..current_month_full.9
+data_source_for_3_months.1..data_source_in_current_month.9,factor,data_source_for_3_months.1..data_source_in_current_month.9
+data_source_for_3_months.1..for_current_month_is_the_inf.9,integer,data_source_for_3_months.1..for_current_month_is_the_inf.9
+data_source_for_3_months.1..in_current_month_what_is_the.9,integer,data_source_for_3_months.1..in_current_month_what_is_the.9
+data_source_for_3_months.2..current_month.9,factor,data_source_for_3_months.2..current_month.9
+data_source_for_3_months.2..current_month_full.9,factor,data_source_for_3_months.2..current_month_full.9
+data_source_for_3_months.2..data_source_in_current_month.9,factor,data_source_for_3_months.2..data_source_in_current_month.9
+data_source_for_3_months.2..for_current_month_is_the_inf.9,integer,data_source_for_3_months.2..for_current_month_is_the_inf.9
+data_source_for_3_months.2..in_current_month_what_is_the.9,integer,data_source_for_3_months.2..in_current_month_what_is_the.9
+data_source_for_3_months.3..current_month.9,factor,data_source_for_3_months.3..current_month.9
+data_source_for_3_months.3..current_month_full.9,factor,data_source_for_3_months.3..current_month_full.9
+data_source_for_3_months.3..data_source_in_current_month.9,factor,data_source_for_3_months.3..data_source_in_current_month.9
+data_source_for_3_months.3..for_current_month_is_the_inf.9,integer,data_source_for_3_months.3..for_current_month_is_the_inf.9
+data_source_for_3_months.3..in_current_month_what_is_the.9,integer,data_source_for_3_months.3..in_current_month_what_is_the.9
+first_visit_anc_patients,integer,first_visit_anc_patients
+anc_women_tested_for_hiv,integer,anc_women_tested_for_hiv
+tot_number_of_indicators,integer,tot_number_of_indicators
+status_of_indicators_on_nhmis_count,integer,status_of_indicators_on_nhmis_count
+current_ind_name_2,factor,current_ind_name_2
+current_ind_label_2,factor,current_ind_label_2
+anc_data_source,factor,anc_data_source
+anc_data_source2,factor,anc_data_source2
+curr_indicator_iteration,integer,curr_indicator_iteration
+status_of_data_source_for_c,factor,status_of_data_source_for_c
+oth_deriv_ind,character,oth_deriv_ind
+data_source_for_3_month_count,integer,data_source_for_3_month_count
+current_ind_name_2.1,factor,current_ind_name_2
+current_ind_label_2.1,factor,current_ind_label_2
+anc_data_source.1,factor,anc_data_source
+anc_data_source2.1,factor,anc_data_source2
+curr_indicator_iteration.1,integer,curr_indicator_iteration
+status_of_data_source_for_c.1,factor,status_of_data_source_for_c
+oth_deriv_ind.1,character,oth_deriv_ind
+data_source_for_3_month_count.1,integer,data_source_for_3_month_count
+data_source_for_3_month.1..current_month2,factor,data_source_for_3_month.1..current_month2
+data_source_for_3_month.1..current_month_full2,factor,data_source_for_3_month.1..current_month_full2
+data_source_for_3_month.1..data_source_in_current_month2,factor,data_source_for_3_month.1..data_source_in_current_month2
+data_source_for_3_month.1..oth_anc_dt_src_in_mth,character,data_source_for_3_month.1..oth_anc_dt_src_in_mth
+data_source_for_3_month.1..for_current_month_is_the_inf2,integer,data_source_for_3_month.1..for_current_month_is_the_inf2
+data_source_for_3_month.1..in_current_month_what_is_the2,integer,data_source_for_3_month.1..in_current_month_what_is_the2
+data_source_for_3_month.2..current_month2,factor,data_source_for_3_month.2..current_month2
+data_source_for_3_month.2..current_month_full2,factor,data_source_for_3_month.2..current_month_full2
+data_source_for_3_month.2..data_source_in_current_month2,factor,data_source_for_3_month.2..data_source_in_current_month2
+data_source_for_3_month.2..oth_anc_dt_src_in_mth,character,data_source_for_3_month.2..oth_anc_dt_src_in_mth
+data_source_for_3_month.2..for_current_month_is_the_inf2,integer,data_source_for_3_month.2..for_current_month_is_the_inf2
+data_source_for_3_month.2..in_current_month_what_is_the2,integer,data_source_for_3_month.2..in_current_month_what_is_the2
+data_source_for_3_month.3..current_month2,factor,data_source_for_3_month.3..current_month2
+data_source_for_3_month.3..current_month_full2,factor,data_source_for_3_month.3..current_month_full2
+data_source_for_3_month.3..data_source_in_current_month2,factor,data_source_for_3_month.3..data_source_in_current_month2
+data_source_for_3_month.3..oth_anc_dt_src_in_mth,character,data_source_for_3_month.3..oth_anc_dt_src_in_mth
+data_source_for_3_month.3..for_current_month_is_the_inf2,integer,data_source_for_3_month.3..for_current_month_is_the_inf2
+data_source_for_3_month.3..in_current_month_what_is_the2,integer,data_source_for_3_month.3..in_current_month_what_is_the2
+data_source_for_3_month.1..current_month2.1,factor,data_source_for_3_month.1..current_month2.1
+data_source_for_3_month.1..current_month_full2.1,factor,data_source_for_3_month.1..current_month_full2.1
+data_source_for_3_month.1..data_source_in_current_month2.1,factor,data_source_for_3_month.1..data_source_in_current_month2.1
+data_source_for_3_month.1..oth_anc_dt_src_in_mth.1,character,data_source_for_3_month.1..oth_anc_dt_src_in_mth.1
+data_source_for_3_month.1..for_current_month_is_the_inf2.1,integer,data_source_for_3_month.1..for_current_month_is_the_inf2.1
+data_source_for_3_month.1..in_current_month_what_is_the2.1,integer,data_source_for_3_month.1..in_current_month_what_is_the2.1
+data_source_for_3_month.2..current_month2.1,factor,data_source_for_3_month.2..current_month2.1
+data_source_for_3_month.2..current_month_full2.1,factor,data_source_for_3_month.2..current_month_full2.1
+data_source_for_3_month.2..data_source_in_current_month2.1,factor,data_source_for_3_month.2..data_source_in_current_month2.1
+data_source_for_3_month.2..oth_anc_dt_src_in_mth.1,character,data_source_for_3_month.2..oth_anc_dt_src_in_mth.1
+data_source_for_3_month.2..for_current_month_is_the_inf2.1,integer,data_source_for_3_month.2..for_current_month_is_the_inf2.1
+data_source_for_3_month.2..in_current_month_what_is_the2.1,integer,data_source_for_3_month.2..in_current_month_what_is_the2.1
+data_source_for_3_month.3..current_month2.1,factor,data_source_for_3_month.3..current_month2.1
+data_source_for_3_month.3..current_month_full2.1,factor,data_source_for_3_month.3..current_month_full2.1
+data_source_for_3_month.3..data_source_in_current_month2.1,factor,data_source_for_3_month.3..data_source_in_current_month2.1
+data_source_for_3_month.3..oth_anc_dt_src_in_mth.1,character,data_source_for_3_month.3..oth_anc_dt_src_in_mth.1
+data_source_for_3_month.3..for_current_month_is_the_inf2.1,integer,data_source_for_3_month.3..for_current_month_is_the_inf2.1
+data_source_for_3_month.3..in_current_month_what_is_the2.1,integer,data_source_for_3_month.3..in_current_month_what_is_the2.1
+int_end_time,Time,int_end_time
+instanceID,character,instanceID
+instanceName,character,instanceName
+X_id,character,X_id
+X_uuid,character,X_uuid
+X_submission_time,Time,X_submission_time
+X_tags,character,X_tags
+X_notes,character,X_notes
+X_version,character,X_version
+X_duration,CharNum,X_duration
+X_submitted_by,factor,X_submitted_by
+X_total_media,integer,X_total_media
+X_media_count,integer,X_media_count
+X_media_all_received,integer,X_media_all_received
+FacilityLabel,factor,FacilityLabel
+StateLabel,factor,StateLabel
+LGALabel,factor,LGALabel
+SenatorialDistLabel,factor,SenatorialDistLabel
