@@ -8,7 +8,6 @@ config <- config::get(value = NULL, config = yaml_environment, file = Sys.getenv
 
 p_url <- config$primarycsvurl
 s_url <- config$secondarycsvurl
-
 # comment out for now
 p_csv <- read.csv(p_url)
 s_csv <- read.csv(s_url)

@@ -40,3 +40,4 @@ rsconnect/
 *.yml
 /Environments
 .gitignore
+.Rproj.user

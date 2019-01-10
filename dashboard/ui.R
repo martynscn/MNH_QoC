@@ -1,3 +1,4 @@
+# Depowa secretariat complex 092904342, 08164189053
 library(DT)
 library(shiny)
 library(highcharter)
@@ -11,13 +12,22 @@ library(ggplot2)
 library(formattable)
 library(knitr)
 library(shinydashboard)
+library(lubridate)
+library(readr)
 
-setwd("C:/Users/totus tuus/Documents/R_projects/MNH_QoC_Dashboard/")
+install.packages(c("magrittr","httr","jsonlite","data.table","googlesheets","dplyr","ggplot2","formattable","knitr","shinydashboard","lubridate","readr"))
+server_version <- "yes" #Enter "yes" or "no"
+
+if(server_version == "yes") {
+  setwd("/srv/shiny-server/e4e-apps/MNH_QoC_Dashboard")
+} else if (server_version == "no") {
+  setwd("C:/Users/totus tuus/Documents/R_projects/MNH_QoC_Dashboard/")
+}
 p_csv_import <- read.csv(file = "p_csv.csv", row.names = NULL, as.is = TRUE)
 s_csv_import <- read.csv(file = "s_csv.csv", row.names = NULL, as.is = TRUE)
 
 
-sec_metadata_import <- read.csv(file = "dashboard/data/prim_metadata_import.csv", as.is = TRUE)
+sec_metadata_import <- read.csv(file = "dashboard/data/sec_metadata_import.csv", as.is = TRUE)
 prim_metadata_import <- read.csv(file = "dashboard/data/prim_metadata_import.csv", as.is = TRUE)
 
 OrgUnitsExport <- read.csv("dashboard/data/MNH_OrgUnitsExport.csv", stringsAsFactors = TRUE)
@@ -106,7 +116,7 @@ secDataTemp5_List <- sapply(X = 1:ncol(secDataTemp4),
 
 # converting list versions to data frames ----
 primDataTemp5_df <- as.data.frame(primDataTemp5_List, row.names = NULL,stringsAsFactors = FALSE, col.names = names(primDataTemp4))
-# secDataTemp5_df <- as.data.frame(secDataTemp5_List, row.names = NULL,stringsAsFactors = FALSE, col.names = names(secDataTemp4))
+secDataTemp5_df <- as.data.frame(secDataTemp5_List, row.names = NULL,stringsAsFactors = FALSE, col.names = names(secDataTemp4))
 
 # generating columns from primary data with different data types ----
 primData <- primDataTemp5_df
@@ -120,17 +130,17 @@ prim_period_cols <- prim_metadata_import[prim_Data_Types == "Period",]
 prim_posixct_cols <- prim_metadata_import[prim_Data_Types == "POSIXct",]
 
 # generating columns from secondary data with different data types ----
-# secData <- secDataTemp5_df
-# sec_Data_Types <- sapply(secData, class, simplify = TRUE, USE.NAMES = FALSE)
-# sec_numeric_cols <- sec_metadata_import[sec_Data_Types == "numeric"|sec_Data_Types == "integer",]
-# sec_factor_cols <- sec_metadata_import[sec_Data_Types == "factor",]
-# sec_logical_cols <- sec_metadata_import[sec_Data_Types == "logical",]
-# sec_character_cols <- sec_metadata_import[sec_Data_Types == "character",]
-# sec_date_cols <- sec_metadata_import[sec_Data_Types == "Date",]
-# sec_period_cols <- sec_metadata_import[sec_Data_Types == "Period",]
-# sec_posixct_cols <- sec_metadata_import[sec_Data_Types == "POSIXct",]
+secData <- secDataTemp5_df
+sec_Data_Types <- sapply(secData, class, simplify = TRUE, USE.NAMES = FALSE)
+sec_numeric_cols <- sec_metadata_import[sec_Data_Types == "numeric"|sec_Data_Types == "integer",]
+sec_factor_cols <- sec_metadata_import[sec_Data_Types == "factor",]
+sec_logical_cols <- sec_metadata_import[sec_Data_Types == "logical",]
+sec_character_cols <- sec_metadata_import[sec_Data_Types == "character",]
+sec_date_cols <- sec_metadata_import[sec_Data_Types == "Date",]
+sec_period_cols <- sec_metadata_import[sec_Data_Types == "Period",]
+sec_posixct_cols <- sec_metadata_import[sec_Data_Types == "POSIXct",]
 
-# Generating labels from primary and secondary data with different data types ----
+# Generating labels from primary data with different data types ----
 prim_all_label <- prim_metadata_import$Col_Name
 names(prim_all_label) <- prim_metadata_import$Computed.question.name
 prim_numeric_label <- prim_numeric_cols$Col_Name
@@ -148,7 +158,7 @@ names(prim_period_label) <- prim_period_cols$Computed.question.name
 prim_posixct_label <- prim_posixct_cols$Col_Name
 names(prim_posixct_label) <- prim_posixct_cols$Computed.question.name
 
-# constructing secondary labels ----
+# Generating labels from secondary data with different data types ----
 # sec_all_label <- sec_metadata_import$Col_Name
 # names(sec_all_label) <- sec_metadata_import$Computed.question.name
 # sec_numeric_label <- sec_numeric_cols$Col_Name
@@ -167,34 +177,52 @@ names(prim_posixct_label) <- prim_posixct_cols$Computed.question.name
 # names(sec_posixct_label) <- sec_posixct_cols$Computed.question.name
 # Download raw data ----
 downloadRawData <- parse("DownloadMNHData.R")
+
+PreSelectedPrimInds <- c("email","username","end00000000","StateLabel","FacilityLabel")
 #Start dashboard UI ----
 shinyUI(
   dashboardPage(
   # tags$head(tags$script(src = "message-handler.js"), tags$style(type="text/css","body{padding-bottom: 70px;}")),
   dashboardHeader(title = "MNH QoC Dashboard"),
-  dashboardSidebar(
+  dashboardSidebar(width = "400px",collapsed = FALSE,
     # Primary labels ----
     fluidRow(column(6, selectInput("prim_all_label", "1st primary variable(x-axis)",prim_all_label, prim_all_label[1])),column(6,selectInput("prim_all_label2", "2nd primary variable(y-axis)",prim_all_label, prim_all_label[2]))),
-    fluidRow(column(6, selectInput("prim_numeric_label", "1st primary numeric variable(x-axis)",prim_numeric_label, prim_numeric_label[1])),column(6,selectInput("prim_numeric_label", "1st primary numeric variable(x-axis)",prim_numeric_label, prim_numeric_label[2]))),
-    fluidRow(column(6, selectInput("prim_factor_label", "1st primary factor variable(x-axis)",prim_factor_label, prim_factor_label[3])),column(6, selectInput("prim_factor_label", "1st primary factor variable(x-axis)",prim_factor_label, prim_factor_label[3]))),
-    fluidRow(column(6, selectInput("prim_logical_label", "1st primary logical variable(x-axis)",prim_logical_label, prim_logical_label[3])),column(6, selectInput("prim_logical_label", "1st primary logical variable(x-axis)",prim_logical_label, prim_logical_label[3]))),
-    fluidRow(column(6, selectInput("prim_character_label", "1st primary character variable(x-axis)",prim_character_label, prim_character_label[3])),column(6, selectInput("prim_character_label", "1st primary character variable(x-axis)",prim_character_label, prim_character_label[3]))),
-    fluidRow(column(6, selectInput("prim_date_label", "1st primary date variable(x-axis)",prim_date_label, prim_date_label[3])),column(6, selectInput("prim_date_label", "1st primary date variable(x-axis)",prim_date_label, prim_date_label[3]))),
-    fluidRow(column(6, selectInput("prim_period_label", "1st primary period variable(x-axis)",prim_period_label, prim_period_label[3])),column(6, selectInput("prim_period_label", "1st primary period variable(x-axis)",prim_period_label, prim_period_label[3]))),
-    fluidRow(column(6, selectInput("prim_posixct_label", "1st primary posixct variable(x-axis)",prim_posixct_label, prim_posixct_label[3])),column(6, selectInput("prim_posixct_label", "1st primary posixct variable(x-axis)",prim_posixct_label, prim_posixct_label[3]))),
+    fluidRow(column(6, selectInput("prim_numeric_label", "1st primary numeric variable(x-axis)",prim_numeric_label, prim_numeric_label[1])),column(6,selectInput("prim_numeric_label2", "2nd primary numeric variable(y-axis)",prim_numeric_label, prim_numeric_label[2]))),
+    fluidRow(column(6, selectInput("prim_factor_label", "1st primary factor variable(x-axis)",prim_factor_label, prim_factor_label[1])),column(6, selectInput("prim_factor_label2", "2nd primary factor variable(y-axis)",prim_factor_label, prim_factor_label[2]))),
+    fluidRow(column(6, selectInput("prim_logical_label", "1st primary logical variable(x-axis)",prim_logical_label, prim_logical_label[1])),column(6, selectInput("prim_logical_label2", "2nd primary logical variable(y-axis)",prim_logical_label, prim_logical_label[2]))),
+    fluidRow(column(6, selectInput("prim_character_label", "1st primary character variable(x-axis)",prim_character_label, prim_character_label[1])),column(6, selectInput("prim_character_label2", "2nd primary character variable(y-axis)",prim_character_label, prim_character_label[2]))),
+    fluidRow(column(6, selectInput("prim_date_label", "1st primary date variable(x-axis)",prim_date_label, prim_date_label[1])),column(6, selectInput("prim_date_label2", "2nd primary date variable(y-axis)",prim_date_label, prim_date_label[2]))),
+    fluidRow(column(6, selectInput("prim_period_label", "1st primary period variable(x-axis)",prim_period_label, prim_period_label[1])),column(6, selectInput("prim_period_label2", "2nd primary period variable(y-axis)",prim_period_label, prim_period_label[2]))),
+    fluidRow(column(6, selectInput("prim_posixct_label", "1st primary posixct variable(x-axis)",prim_posixct_label, prim_posixct_label[1])),column(6, selectInput("prim_posixct_label2", "2nd primary posixct variable(y-axis)",prim_posixct_label, prim_posixct_label[2]))),
     # Secondary labels ----
-    # fluidRow(column(6, selectInput("sec_all_label", "1st primary variable(x-axis)",sec_all_label, sec_all_label[3])),column(6, selectInput("sec_all_label", "1st primary variable(x-axis)",sec_all_label, sec_all_label[3]))),
-    # fluidRow(column(6, selectInput("sec_numeric_label", "1st primary numeric variable(x-axis)",sec_numeric_label, sec_numeric_label[3])),column(6, selectInput("sec_numeric_label", "1st primary numeric variable(x-axis)",sec_numeric_label, sec_numeric_label[3]))),
-    # fluidRow(column(6, selectInput("sec_factor_label", "1st primary factor variable(x-axis)",sec_factor_label, sec_factor_label[3])),column(6, selectInput("sec_factor_label", "1st primary factor variable(x-axis)",sec_factor_label, sec_factor_label[3]))),
-    # fluidRow(column(6, selectInput("sec_logical_label", "1st primary logical variable(x-axis)",sec_logical_label, sec_logical_label[3])),column(6, selectInput("sec_logical_label", "1st primary logical variable(x-axis)",sec_logical_label, sec_logical_label[3]))),
-    # fluidRow(column(6, selectInput("sec_character_label", "1st primary character variable(x-axis)",sec_character_label, sec_character_label[3])),column(6, selectInput("sec_character_label", "1st primary character variable(x-axis)",sec_character_label, sec_character_label[3]))),
-    # fluidRow(column(6, selectInput("sec_date_label", "1st primary date variable(x-axis)",sec_date_label, sec_date_label[3])),column(6, selectInput("sec_date_label", "1st primary date variable(x-axis)",sec_date_label, sec_date_label[3]))),
-    # fluidRow(column(6, selectInput("sec_period_label", "1st primary period variable(x-axis)",sec_period_label, sec_period_label[3])),column(6, selectInput("sec_period_label", "1st primary period variable(x-axis)",sec_period_label, sec_period_label[3]))),
-    # fluidRow(column(6, selectInput("sec_posixct_label", "1st primary posixct variable(x-axis)",sec_posixct_label, sec_posixct_label[3])),column(6, selectInput("sec_posixct_label", "1st primary posixct variable(x-axis)",sec_posixct_label, sec_posixct_label[3]))),
+    # fluidRow(column(6, selectInput("sec_all_label", "1st primary variable(x-axis)",sec_all_label, sec_all_label[1])),column(6, selectInput("sec_all_label2", "2nd primary variable(y-axis)",sec_all_label, sec_all_label[2]))),
+    # fluidRow(column(6, selectInput("sec_numeric_label", "1st primary numeric variable(x-axis)",sec_numeric_label, sec_numeric_label[1])),column(6, selectInput("sec_numeric_label2", "2nd primary numeric variable(y-axis)",sec_numeric_label, sec_numeric_label[2]))),
+    # fluidRow(column(6, selectInput("sec_factor_label", "1st primary factor variable(x-axis)",sec_factor_label, sec_factor_label[1])),column(6, selectInput("sec_factor_label2", "2nd primary factor variable(y-axis)",sec_factor_label, sec_factor_label[2]))),
+    # fluidRow(column(6, selectInput("sec_logical_label", "1st primary logical variable(x-axis)",sec_logical_label, sec_logical_label[1])),column(6, selectInput("sec_logical_label2", "2nd primary logical variable(y-axis)",sec_logical_label, sec_logical_label[2]))),
+    # fluidRow(column(6, selectInput("sec_character_label", "1st primary character variable(x-axis)",sec_character_label, sec_character_label[1])),column(6, selectInput("sec_character_label2", "2nd primary character variable(y-axis)",sec_character_label, sec_character_label[2]))),
+    # fluidRow(column(6, selectInput("sec_date_label", "1st primary date variable(x-axis)",sec_date_label, sec_date_label[1])),column(6, selectInput("sec_date_label2", "2nd primary date variable(y-axis)",sec_date_label, sec_date_label[2]))),
+    # fluidRow(column(6, selectInput("sec_period_label", "1st primary period variable(x-axis)",sec_period_label, sec_period_label[1])),column(6, selectInput("sec_period_label2", "2nd primary period variable(y-axis)",sec_period_label, sec_period_label[2]))),
+    # fluidRow(column(6, selectInput("sec_posixct_label", "1st primary posixct variable(x-axis)",sec_posixct_label, sec_posixct_label[1])),column(6, selectInput("sec_posixct_label2", "2nd primary posixct variable(y-axis)",sec_posixct_label, sec_posixct_label[2]))),
+    
+    # Other input widgets
+    fluidRow(
+      column(6, selectInput("type", "Type", c("line","column","bar","spline"))),
+      column(6, selectInput("sortData","Sort Data", choices = c("Ascending","Descending","Default"), selected = "Descending"))
+    ),
+    fluidRow(
+      column(6, selectInput("aggr_fn","Aggregate function", choices = c("sum","Count" = "Length", "No. of values" = "NROW", "Distinct Count" = "n_distinct","mean","median","max","min","var","sd","IQR"), selected = "sum"))
+    ),
+    fluidRow(
+      column(6, selectInput("theme","Theme for charts", c(FALSE, "fivethirtyeight", "economist","darkunica","gridlight","sandsignika","null","handdrwran","chalk")))
+    )
+    ,
+    fluidRow(
+      column(12, selectizeInput("all_primary_indicators", "Select multiple indicators",c("Select multiple" = "",prim_all_label), multiple = TRUE, selected = PreSelectedPrimInds))
+    ),
     
     # Dashboard side bars ----
     sidebarMenu(
-      menuItem("Dashboard", tabName = "dashboard", icon = icon("dashboard")),
+      menuItem(text = "Dashboard", tabName = "dashboard", icon = icon("dashboard"),badgeLabel = "new",badgeColor = "blue", selected = TRUE, expandedName = "DashboardExpandedName", startExpanded = FALSE),
         menuSubItem("Dashboard Scatter_Chart", tabName = "Scatter_Chart"),
         menuSubItem("Dashboard Correlation_Matrix", tabName = "Correlation_Matrix"),
         menuSubItem("Dashboard Manual_Table_Maker", tabName = "Manual_Table_Maker"),
@@ -221,7 +249,10 @@ shinyUI(
               )
               ),
       tabItem(tabName = "Correlation_Matrix"),
-      tabItem(tabName = "Manual_Table_Maker"),
+      tabItem(tabName = "Manual_Table_Maker",
+              fluidRow(
+                formattableOutput("formattedTable")
+              )),
       tabItem(tabName = "Formatted_table"),
       tabItem(tabName = "BaseR_barchart")
   ))))
