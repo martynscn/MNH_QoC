@@ -7,6 +7,7 @@ library(httr)
 library(jsonlite)
 library("data.table")
 library(googlesheets)
+library(tidyr)
 library(dplyr,warn.conflicts = FALSE, quietly = TRUE)
 library(ggplot2)
 library(formattable)
@@ -15,8 +16,8 @@ library(shinydashboard)
 library(lubridate)
 library(readr)
 
-install.packages(c("magrittr","httr","jsonlite","data.table","googlesheets","dplyr","ggplot2","formattable","knitr","shinydashboard","lubridate","readr"))
-server_version <- "yes" #Enter "yes" or "no"
+# later use yaml to specify the path
+server_version <- "no" #Enter "yes" or "no"
 
 if(server_version == "yes") {
   setwd("/srv/shiny-server/e4e-apps/MNH_QoC_Dashboard")
@@ -159,36 +160,53 @@ prim_posixct_label <- prim_posixct_cols$Col_Name
 names(prim_posixct_label) <- prim_posixct_cols$Computed.question.name
 
 # Generating labels from secondary data with different data types ----
-# sec_all_label <- sec_metadata_import$Col_Name
-# names(sec_all_label) <- sec_metadata_import$Computed.question.name
-# sec_numeric_label <- sec_numeric_cols$Col_Name
-# names(sec_numeric_label) <- sec_numeric_cols$Computed.question.name
-# sec_factor_label <- sec_factor_cols$Col_Name
-# names(sec_factor_label) <- sec_factor_cols$Computed.question.name
-# sec_logical_label <- sec_logical_cols$Col_Name
-# names(sec_logical_label) <- sec_logical_cols$Computed.question.name
-# sec_character_label <- sec_character_cols$Col_Name
-# names(sec_character_label) <- sec_character_cols$Computed.question.name
-# sec_date_label <- sec_date_cols$Col_Name
-# names(sec_date_label) <- sec_date_cols$Computed.question.name
-# sec_period_label <- sec_period_cols$Col_Name
-# names(sec_period_label) <- sec_period_cols$Computed.question.name
-# sec_posixct_label <- sec_posixct_cols$Col_Name
-# names(sec_posixct_label) <- sec_posixct_cols$Computed.question.name
+sec_all_label <- sec_metadata_import$Col_Name
+names(sec_all_label) <- sec_metadata_import$Computed.question.name
+sec_numeric_label <- sec_numeric_cols$Col_Name
+names(sec_numeric_label) <- sec_numeric_cols$Computed.question.name
+sec_factor_label <- sec_factor_cols$Col_Name
+names(sec_factor_label) <- sec_factor_cols$Computed.question.name
+sec_logical_label <- sec_logical_cols$Col_Name
+names(sec_logical_label) <- sec_logical_cols$Computed.question.name
+sec_character_label <- sec_character_cols$Col_Name
+names(sec_character_label) <- sec_character_cols$Computed.question.name
+sec_date_label <- sec_date_cols$Col_Name
+names(sec_date_label) <- sec_date_cols$Computed.question.name
+sec_period_label <- sec_period_cols$Col_Name
+names(sec_period_label) <- sec_period_cols$Computed.question.name
+sec_posixct_label <- sec_posixct_cols$Col_Name
+names(sec_posixct_label) <- sec_posixct_cols$Computed.question.name
 # Download raw data ----
-downloadRawData <- parse("DownloadMNHData.R")
+# downloadRawData <- parse("DownloadMNHData.R")
 
-PreSelectedPrimInds <- c("email","username","end00000000","StateLabel","FacilityLabel")
+PreSelectedPrimInds <- c("StateLabel","FacilityLabel","how_many_people_live_in_the_cat")
 #Start dashboard UI ----
 shinyUI(
   dashboardPage(
   # tags$head(tags$script(src = "message-handler.js"), tags$style(type="text/css","body{padding-bottom: 70px;}")),
   dashboardHeader(title = "MNH QoC Dashboard"),
   dashboardSidebar(width = "400px",collapsed = FALSE,
+     # Dashboard side bars ----
+     sidebarMenu(
+       menuItem(text = "Dashboard", tabName = "dashboard", icon = icon("dashboard"),badgeLabel = "new",badgeColor = "blue", selected = TRUE, expandedName = "DashboardExpandedName", startExpanded = FALSE),
+       menuSubItem("Dashboard Scatter_Chart", tabName = "Scatter_Chart"),
+       menuSubItem("Dashboard Correlation_Matrix", tabName = "Correlation_Matrix"),
+       menuSubItem("Dashboard Manual_Table_Maker", tabName = "Manual_Table_Maker", selected = TRUE),
+       menuSubItem("Dashboard Formatted_table", tabName = "Formatted_table"),
+       menuSubItem("Dashboard BaseR_barchart", tabName = "BaseR_barchart"),
+       menuItem("Settings"),
+       menuItem("Update and Export Data")
+     ),
+    fluidRow(column(6, selectInput("type", "Type", c("line","column","bar","spline"))),column(6, selectInput("sortData","Sort Data", choices = c("Ascending","Descending","Default"), selected = "Descending"))),
+    fluidRow(
+      column(6, selectInput("aggr_fn","Aggregate function", choices = c("sum","Count" = "Length", "No. of values" = "NROW", "Distinct Count" = "n_distinct","mean","median","max","min","var","sd","IQR"), selected = "sum")),
+      column(6, selectInput("aggr_data_quest", "Aggregage data?", c("Yes","No"), "No"))
+      ),
+    fluidRow(column(12, selectizeInput("all_primary_indicators", "Select multiple indicators",c("Select multiple" = "",prim_all_label), multiple = TRUE, selected = PreSelectedPrimInds, width = "100%"))),
     # Primary labels ----
     fluidRow(column(6, selectInput("prim_all_label", "1st primary variable(x-axis)",prim_all_label, prim_all_label[1])),column(6,selectInput("prim_all_label2", "2nd primary variable(y-axis)",prim_all_label, prim_all_label[2]))),
-    fluidRow(column(6, selectInput("prim_numeric_label", "1st primary numeric variable(x-axis)",prim_numeric_label, prim_numeric_label[1])),column(6,selectInput("prim_numeric_label2", "2nd primary numeric variable(y-axis)",prim_numeric_label, prim_numeric_label[2]))),
-    fluidRow(column(6, selectInput("prim_factor_label", "1st primary factor variable(x-axis)",prim_factor_label, prim_factor_label[1])),column(6, selectInput("prim_factor_label2", "2nd primary factor variable(y-axis)",prim_factor_label, prim_factor_label[2]))),
+    fluidRow(column(6, selectInput("prim_numeric_label", "1st primary numeric variable(x-axis)",prim_numeric_label, prim_numeric_label[8])),column(6,selectInput("prim_numeric_label2", "2nd primary numeric variable(y-axis)",prim_numeric_label, prim_numeric_label[2]))),
+    fluidRow(column(6, selectInput("prim_factor_label", "1st primary factor variable(x-axis)",prim_factor_label, prim_factor_label[699])),column(6, selectInput("prim_factor_label2", "2nd primary factor variable(y-axis)",prim_factor_label, prim_factor_label[2]))),
     fluidRow(column(6, selectInput("prim_logical_label", "1st primary logical variable(x-axis)",prim_logical_label, prim_logical_label[1])),column(6, selectInput("prim_logical_label2", "2nd primary logical variable(y-axis)",prim_logical_label, prim_logical_label[2]))),
     fluidRow(column(6, selectInput("prim_character_label", "1st primary character variable(x-axis)",prim_character_label, prim_character_label[1])),column(6, selectInput("prim_character_label2", "2nd primary character variable(y-axis)",prim_character_label, prim_character_label[2]))),
     fluidRow(column(6, selectInput("prim_date_label", "1st primary date variable(x-axis)",prim_date_label, prim_date_label[1])),column(6, selectInput("prim_date_label2", "2nd primary date variable(y-axis)",prim_date_label, prim_date_label[2]))),
@@ -205,31 +223,11 @@ shinyUI(
     # fluidRow(column(6, selectInput("sec_posixct_label", "1st primary posixct variable(x-axis)",sec_posixct_label, sec_posixct_label[1])),column(6, selectInput("sec_posixct_label2", "2nd primary posixct variable(y-axis)",sec_posixct_label, sec_posixct_label[2]))),
     
     # Other input widgets
-    fluidRow(
-      column(6, selectInput("type", "Type", c("line","column","bar","spline"))),
-      column(6, selectInput("sortData","Sort Data", choices = c("Ascending","Descending","Default"), selected = "Descending"))
-    ),
-    fluidRow(
-      column(6, selectInput("aggr_fn","Aggregate function", choices = c("sum","Count" = "Length", "No. of values" = "NROW", "Distinct Count" = "n_distinct","mean","median","max","min","var","sd","IQR"), selected = "sum"))
-    ),
-    fluidRow(
-      column(6, selectInput("theme","Theme for charts", c(FALSE, "fivethirtyeight", "economist","darkunica","gridlight","sandsignika","null","handdrwran","chalk")))
-    )
-    ,
-    fluidRow(
-      column(12, selectizeInput("all_primary_indicators", "Select multiple indicators",c("Select multiple" = "",prim_all_label), multiple = TRUE, selected = PreSelectedPrimInds))
-    ),
     
-    # Dashboard side bars ----
-    sidebarMenu(
-      menuItem(text = "Dashboard", tabName = "dashboard", icon = icon("dashboard"),badgeLabel = "new",badgeColor = "blue", selected = TRUE, expandedName = "DashboardExpandedName", startExpanded = FALSE),
-        menuSubItem("Dashboard Scatter_Chart", tabName = "Scatter_Chart"),
-        menuSubItem("Dashboard Correlation_Matrix", tabName = "Correlation_Matrix"),
-        menuSubItem("Dashboard Manual_Table_Maker", tabName = "Manual_Table_Maker"),
-        menuSubItem("Dashboard Formatted_table", tabName = "Formatted_table"),
-        menuSubItem("Dashboard BaseR_barchart", tabName = "BaseR_barchart"),
-      menuItem("Settings"),
-      menuItem("Update and Export Data")
+    
+    fluidRow(
+      column(6, selectInput("stacked", "stacked", c(FALSE, "normal","percent"), FALSE)),
+      column(6, selectInput("theme","Theme for charts", c(FALSE, "fivethirtyeight", "economist","darkunica","gridlight","sandsignika","null","handdrwran","chalk")))
     )
   ),
   # Dashboard body ----
@@ -240,19 +238,20 @@ shinyUI(
                 
               )
             ),
-      tabItem(tabName = "Scatter_Chart",
-              fluidRow(
-                highchartOutput(outputId = "scatterChart")
-              ),
-              fluidRow(
-                highchartOutput(outputId = "hcontainer")
-              )
-              ),
+      tabItem(tabName = "Scatter_Chart",fluidRow(
+              highchartOutput(outputId = "scatterChart")),
+              highchartOutput(outputId = "hcontainer")),
       tabItem(tabName = "Correlation_Matrix"),
       tabItem(tabName = "Manual_Table_Maker",
-              fluidRow(
-                formattableOutput("formattedTable")
-              )),
-      tabItem(tabName = "Formatted_table"),
-      tabItem(tabName = "BaseR_barchart")
+              conditionalPanel(condition = "input['aggr_data_quest'] == 'Yes'", {
+                selectInput("summarize_aggregate_prim", "Variable to summarize with",prim_all_label[prim_all_label %in% prim_numeric_label])
+              }),
+              shiny::dataTableOutput("manualDTMaker"),
+              shiny::dataTableOutput("primsummaryDataTable")
+              ),
+      tabItem(tabName = "Formatted_table",
+              formattableOutput("formattedTable")),
+      tabItem(tabName = "BaseR_barchart", 
+              highchartOutput("IndicatorBarChart2"),
+              fluidRow(plotOutput("BaseR_barchart")))
   ))))
