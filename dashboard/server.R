@@ -414,7 +414,23 @@ shinyServer(function(input, output, session,data) {
     }
     bar_chart
   })
+  output$columnChartPrim <- renderHighchart({
+  ts <- primData[,c(input$prim_all_label,"StateLabel")]
+  names(ts)[1] <- "start000000"
+  ts <- ts[!is.na(ts[,1]),]
   
+  ts$start000000 <- ymd(format(ymd_hms(ts$start000000), "%Y/%m/%e"))
+  ts_grouped <- group_by(ts, start000000) %>% summarise(count = dplyr::n())
+  names(ts_grouped)[2] <- "Number_of_submissions" 
+  ts_grouped$start000000 <- as.Date(ts_grouped$start000000)
+  
+  highchart() %>% 
+    hc_chart(type = "column") %>% 
+    hc_xAxis(categories = ts_grouped$start000000) %>% 
+    hc_add_series(data = ts_grouped$Number_of_submissions, dataLabels = list(enabled = TRUE), 
+                  name = "Number of daily assessments in PHCs",colorByPoint = FALSE)%>% 
+    hc_add_theme(hc_theme_google())
+  })
 
   output$correlationMatrix <- renderHighchart({
     if(input$dashboardLevel == "Primary") {

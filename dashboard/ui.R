@@ -328,6 +328,7 @@ ui <- function(request) {shinyUI(
       tabItem(tabName = "Formatted_table",
               formattableOutput("formattedTable")),
       tabItem(tabName = "Barchart",
+              highchartOutput("columnChartPrim"),
               selectInput("prim_factor_label_analysis_chart", "Primary factor variable",prim_factor_label, prim_factor_label[699]),
               highchartOutput("IndicatorBarChart2")),
       tabItem(tabName = "Prim_Sec_Barchart", 
