@@ -23,7 +23,7 @@ server_version <- config$ServerVersion
 # server_version <- "no" #Enter "yes" or "no"
 # Set path variable ----
 if(server_version == "yes") {
-  setwd("/srv/shiny-server/e4e-apps/MNH_QoC_Dashboard")
+  setwd("/srv/shiny-server/e4e-apps/MNH_QoC")
 } else if (server_version == "no") {
   setwd("C:/Users/totus tuus/Documents/R_projects/MNH_QoC_Dashboard/")}
 p_csv_import <- read.csv(file = "p_csv.csv", row.names = NULL, as.is = TRUE)
