@@ -18,7 +18,9 @@
 
 # First set-up a way of sharing data between ui.R and server.R before migrating to yaml Later change to use yaml
 # later use yaml to specify the path ----
-server_version <- "no" #Enter "yes" or "no"
+config <- config::get()
+server_version <- config$ServerVersion
+# server_version <- "no" #Enter "yes" or "no"
 # Set path variable ----
 if(server_version == "yes") {
   setwd("/srv/shiny-server/e4e-apps/MNH_QoC_Dashboard")
